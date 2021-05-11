@@ -1,0 +1,230 @@
+/* flexbox de la zone d'entête */
+
+@font-face 
+{
+    font-family: 'Raleway';
+    src: url('Raleway-VariableFont_wght.ttf');
+}
+
+*
+{
+
+    font-family: Raleway, Courier, monospace, Arial;
+
+}
+header
+{
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+#blockLogo
+{
+
+    width: 14%;
+    padding-left: 1.5%;
+}
+
+#menunavig
+{
+    width: 37%;
+
+    padding-top: 20px;
+}
+
+.margeGauche
+{
+    margin-left: 1.5%;
+}
+
+input[type="submit"], input[type="text"] 
+{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+#menunavig
+{
+    display: flex;
+
+    justify-content: space-around;
+    
+
+}
+
+#rechercheVille
+{
+
+    display: flex;
+
+    padding-left: 1.5%;
+
+    align-items: center;
+
+    width: 33%;
+
+    height: 50px;
+
+    border-radius: 15px;
+}
+
+
+#pointe
+{
+    background-color: #f2f2f2;
+    width: 13%;
+
+    height: 50px;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#laVille
+{
+    width: 55%;
+
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#valid
+{
+
+    background-color: #0065fc;
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    width: 32%;
+
+    height: 50px;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#filtre
+{
+    display: flex;
+
+    margin-left: 1.5%;
+}
+
+#filtresText
+{
+    width: 10%;
+    height: 48px;
+    
+
+    display: flex;
+    align-items: center;
+
+}
+
+#icone
+{
+
+    display: block;
+    background-color: aquamarine;
+    height: 48px;
+    width: 48px;
+    border-radius: 50px;
+    
+}
+
+button
+{
+	
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    height: 48px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#packEco
+{
+    width: 13%;
+    height: 48px;
+    border: solid;
+    border-color: #d9d9d9;
+    margin-right: 2%;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#packFamille
+{
+
+    width: 10%;
+    height: 48px;
+    border: solid;
+    border-color: #d9d9d9;
+    margin-right: 2%;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+
+}
+
+#packRomantique
+{
+    width: 12%;
+    height: 48px;
+    border: solid;
+    border-color: #d9d9d9;
+    margin-right: 2%;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#packAnimaux
+{
+    width: 16%;
+    height: 48px;
+    border: solid;
+    border-color: #d9d9d9;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
