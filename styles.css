@@ -1,4 +1,4 @@
-/* flexbox de la zone d'entête */
+/* Propriétés CSS communes à toute la page web */
 
 @font-face 
 {
@@ -8,39 +8,69 @@
 
 *
 {
-
     font-family: Raleway, Courier, monospace, Arial;
-
 }
+
+/* flexbox et CSS de la zone d'entête */
+
+
+/* Le header va dispatcher le logo Reservia à gauche et hébergement/Activités et le bouton s'inscrire sur la droite */
 header
 {
-
     display: flex;
 
     justify-content: space-between;
 
-}
+    margin-top: 0px; /* A virer à la fin */
 
+    padding-left: 1.5%;
+}
 
 #blockLogo
 {
-
     width: 14%;
-    padding-left: 1.5%;
 }
 
 #menunavig
 {
     width: 37%;
 
-    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.margeGauche
+.lienMenu
+{
+    display: flex;
+    align-items: center;
+}
+
+.lienMenu:hover
+{
+    color: #3081fd;
+    border-top-style: solid;
+}
+
+
+#boutonSinscrire
+{
+    color: #3081fd;
+}
+
+
+/* flexbox de la zone d'entête FIN FIN FIN CSS de la zone d'entête FIN FIN FIN*/
+
+/* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
+
+
+
+#sectionFiltre
 {
     margin-left: 1.5%;
+  
 }
 
+/* CSS de la zone de texte: recherche ville et bouton submit associé  */
 input[type="submit"], input[type="text"] 
 {
 	background: none;
@@ -52,22 +82,11 @@ input[type="submit"], input[type="text"]
 	outline: inherit;
 }
 
-
-#menunavig
-{
-    display: flex;
-
-    justify-content: space-around;
-    
-
-}
+/* CSS de la grosse bulle icone/zone de texte/bouton submit */
 
 #rechercheVille
 {
-
     display: flex;
-
-    padding-left: 1.5%;
 
     align-items: center;
 
@@ -78,6 +97,7 @@ input[type="submit"], input[type="text"]
     border-radius: 15px;
 }
 
+/* CSS de la zone icone */    
 
 #pointe
 {
@@ -94,16 +114,22 @@ input[type="submit"], input[type="text"]
     align-items: center;
 }
 
+/* CSS de la zone de texte */
+
 #laVille
 {
     width: 55%;
 
     height: 50px;
 
+    font-weight: bold;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* CSS de la zone du bouton submit */
 
 #valid
 {
@@ -127,104 +153,336 @@ input[type="submit"], input[type="text"]
     
 }
 
+/* CSS de la ligne de filtes : Eco, Famil., Romantiq., Animaux */
 
 #filtre
 {
     display: flex;
 
-    margin-left: 1.5%;
+    font-weight: bold;
+
 }
 
+/* CSS du texte Filtres: */
 #filtresText
 {
-    width: 10%;
+    width: 5%;
     height: 48px;
-    
 
     display: flex;
     align-items: center;
-
+    
 }
 
-#icone
-{
+/* CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
 
-    display: block;
-    background-color: aquamarine;
-    height: 48px;
+#iconEco
+{
+    background-color: #deebff;
+    border-style: solid;
+    border-color: #deebff;
+    
+    position: relative;
+    left: 24px;
+    
     width: 48px;
-    border-radius: 50px;
+    height: 48px;
+
+    border-radius: 50%;
     
+    display: flex;
+    justify-content: center;
 }
 
-button
+#iconFamille
 {
-	
-	color: inherit;
+    background-color: #deebff;
+    border-style: solid;
+    border-color: #deebff;
+
+    position: relative;
+    left: 24px;
+    
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+#iconRomantique
+{
+    background-color: #deebff;
+    border-style: solid;
+    border-color: #deebff;
+
+    position: relative;
+    left: 24px;
+    
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#iconAnimaux
+{
+    background-color: #deebff;
+    border-style: solid;
+    border-color: #deebff;
+
+    position: relative;
+    left: 24px;
+         
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* propriétés générales CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
+
+button 
+{
+	background: none;
 	border: none;
-	padding: 0;
 	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    height: 48px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+	
 }
 
-#packEco
-{
-    width: 13%;
-    height: 48px;
-    border: solid;
-    border-color: #d9d9d9;
-    margin-right: 2%;
-    border-radius: 30px;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#packFamille
-{
-
-    width: 10%;
-    height: 48px;
-    border: solid;
-    border-color: #d9d9d9;
-    margin-right: 2%;
-    border-radius: 30px;
-
-    display: flex;
-    justify-content: space-around;
-    align-content: stretch;
-
-}
-
-#packRomantique
+/* propriétés CSS individuelles des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
+#boutonEco
 {
     width: 12%;
     height: 48px;
-    border: solid;
     border-color: #d9d9d9;
-    margin-right: 2%;
-    border-radius: 30px;
+    border-style: solid;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
-#packAnimaux
+#boutonFamille
 {
-    width: 16%;
+    width: 9%;
     height: 48px;
-    border: solid;
     border-color: #d9d9d9;
-    border-radius: 30px;
+    border-style: solid;
+    
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+#boutonRomantique
+{
+    width: 11%;
+    height: 48px;
+    border-color: #d9d9d9;
+    border-style: solid;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+#boutonAnimaux
+{
+    width: 15%;
+    height: 48px;
+    border-color: #d9d9d9;
+    border-style: solid;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CSS de la ligne pour Info */
+
+/* prop. Flexbox de cette ligne: icone i + texte pour info */
+
+#pourInfo
+{
+    display: flex;
     align-items: center;
 }
 
+#iPourInfo
+{
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-color: #deebff;
+    border-radius: 50%; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 0.5%;
+
+}
+
+
+
+/* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
+/* FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN */
+
+
+/* CSS de la section des photos des hébergements - SECTION SUPERIEURE */
+
+#sectionSuperieure
+{
+
+    display: flex;
+
+    margin-left: 1.5%;
+}
+
+#blocGauche
+{
+    width: 61%;
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-radius: 15px;
+
+
+    margin-right: 2.7%;
+
+    background-color: #f2f2f2;
+}
+
+#blocGaucheTop
+{
+    display: flex;
+}
+
+#blocGaucheBas
+{
+    display: flex;
+}
+
+
+#titrePlusIcon
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.bullePhoto
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 235px;
+    height: 200px;
+
+    border-style: solid;
+    border-radius: 15%;
+    border-color:#ffffff;
+
+    background-color:#ffffff;
+}
+
+.roundedPix
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.bulleText
+{
+    position: relative;
+    bottom: 10px;
+    margin-left: 1px;
+}
+
+.ratings
+{
+    display: flex;
+    position: relative;
+    bottom: 36px;
+    margin-left: 1px;
+}
+
+#blocDroit
+{
+
+    width: 29%;
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-radius: 15px;
+
+    background-color: #f2f2f2;
+}
+
+.bullePicture
+{
+    display: flex;
+    border-radius: 15px;
+
+    background-color: #ffffff;
+
+}
+
+.leftRoundPix
+{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+
+
+
+/* FIN FIN FIN FIN CSS de la section des photos des hébergements - SECTION SUPERIEURE FIN FIN FIN FIN FIN FIN */
+
+
+/* CSS du footer */
+
+footer
+{
+    padding-left: 1.5%;
+    background-color: #f2f2f2;
+
+    display: flex;
+
+}
+
+
+.articleFooter
+{
+
+    margin-right: 15%;
+
+}
+
+footer a:hover
+{
+    font-style: italic;   /* A VERIFIER DANS LE SCENARIO  */
+}

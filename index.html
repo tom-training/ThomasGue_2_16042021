@@ -4,24 +4,22 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <!-- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    -->
+    
     <meta charset="utf-8"/>
 </head>
 <body>
     <header>
 
-        <aside id="blockLogo"> <image src="images/reservia.svg"/> </aside>
+        <aside id="blockLogo"> <img src="images/reservia.svg"/> </aside>
 
 
         <aside id="menunavig">
             
-            <a> Hébergements </a>
+            <a class="lienMenu"> Hébergements </a>
 
-            <a> Activités </a>
+            <a class="lienMenu"> Activités </a>
 
-            <a> S'inscrire </a> 
+            <button id="boutonSinscrire"> S'inscrire </button> 
         
         </aside>
         
@@ -32,9 +30,9 @@
 
     <section id= "sectionFiltre">
 
-        <h1 class="margeGauche"> Trouver votre hébergement pour des vacances de rêve </h1>
+        <h1> Trouver votre hébergement pour des vacances de rêve </h1>
 
-        <p class="margeGauche"> En plein centre ville ou en pleine nature </p>
+        <p> En plein centre ville ou en pleine nature </p>
 
         <article id="rechercheVille"> 
 
@@ -46,7 +44,6 @@
 
             <p id="laVille"> 
                 <input type="text"/>
-                
             </p>
 
             <p id="valid"> 
@@ -59,58 +56,353 @@
 
             <p id="filtresText"> Filtres </p>
 
-            <p id= "packEco">
-               
-                <img id="billet" src="fontawesome/svgs/solid/money-bill-wave.svg" width="15px"/>
-               
+            
+
+            <p id="iconEco">
+                
+                <img src="fontawesome/svgs/solid/money-bill-wave.svg" width="15px"/>
+
+            </p>
+        
+            
+            <p id="boutonEco">
                 <button> Economique </button> 
             </p>
-
-            <p id= "packFamille">
-                
-                <img id="enfant" src="fontawesome/svgs/solid/child.svg" width="15px" />    
-                
-                <button> Familial </button>     
-            </p>
-
-            <p id= "packRomantique">
-
-                
-                <img id="coeur" src="fontawesome/svgs/solid/heart.svg" width="15px" />    
-                
-                
-                <button> Romantique </button>
-
-            </p>
-
-            <p id= "packAnimaux">
-
-                <p id="icon">
-
-                    <img id="icone" src="fontawesome/svgs/solid/dog.svg" width="15px" />
-
-                </p>
                 
             
-                <p id="bouton">
-                    <button> Animaux autorisés </button>
-                </p>
+
+            
                 
+            <p id= "iconFamille">
                 
-                
+                <img src="fontawesome/svgs/solid/child.svg" width="15px" /> 
+
             </p>
+                
+            <p id= "boutonFamille">
+
+                <button> Familial </button>
+            
+            </p>
+                     
+            
+
+            
+
+            <p id="iconRomantique"> 
+            
+                <img src="fontawesome/svgs/solid/heart.svg" width="15px"/>
+
+            </p>    
+                
+            
+            <p id="boutonRomantique">
+                <button> Romantique </button>
+            </p>
+                
+
+            
+
+            
+
+            <p id= "iconAnimaux">
+
+                <img src="fontawesome/svgs/solid/dog.svg" width="16px" /> 
+
+            </p>
+            
+        
+            <p id= "boutonAnimaux">
+                <button> Animaux autorisés </button>
+            </p>
+            
+                
+        </article>
+
+        <article id="pourInfo">
+
+            <p id="iPourInfo"> 
+                
+                <img src="fontawesome/svgs/solid/info.svg" width="4px" />
+
+            </p>    
+
+            <p> 
+                Plus de 500 logements sont disponible dans cette ville
+            </p>
+
 
 
         </article>
 
         
 
-        <i class="fas fa-map-marker-alt"></i>
-
-
-        <i class="fas fa-map-marker-alt"></i>
+       
 
     </section>
+
+    <!-- FiN de la zone de filtre -->
+
+
+    <!--  Section des photos des hébergements - SECTION SUPERIEURE -->
+
+    <section id="sectionSuperieure">
+
+        <article id="blocGauche">
+            <h3>Hébergements à Marseille</h3>
+            <div id="blocGaucheTop">
+                <div class="bullePhoto">
+                    <img src="images/hosting/photo1.jpg" width="235px" height="113px" class="roundedPix"/>
+                    <p class="bulleText">
+                        <strong>Auberge la Cannebière</strong> <br>
+                        Nuit à partir de <strong> 25€ </strong>
+                    </p>  
+
+                    <p class="ratings"> 
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                    </p>
+                    
+                </div>
+
+                <div class="bullePhoto">
+                    <img src="images/hosting/photo2.jpg" width="235px" height="113px" class="roundedPix"/>
+                    <p class="bulleText">
+                        <strong> Hôtel du port </strong> <br>
+                        Nuit à partir de <strong> 52€ </strong>
+                    </p>  
+
+                    <p class="ratings"> 
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                    </p>
+
+
+                </div>
+
+                <div class="bullePhoto">
+                    <img src="images/hosting/photo3.jpg" width="235px" height="113px" class="roundedPix" />
+
+                    <p class="bulleText">
+                        <strong> Hôtel Les mouettes </strong> <br>
+                        Nuit à partir de <strong> 76€ </strong>
+                    </p>  
+
+                    <p class="ratings"> 
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                    </p>
+                </div>
+
+            </div>
+            <div id="blocGaucheBas">
+                <div class="bullePhoto">
+                    <img src="images/hosting/photo4.jpg" width="235px" height="113px" class="roundedPix"/>
+                    <p class="bulleText">
+                        <strong> Hôtel de la mer </strong> <br>
+                        Nuit à partir de <strong> 46€ </strong>
+                    </p>  
+
+                    <p class="ratings"> 
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                    </p>
+                </div>
+
+                <div class="bullePhoto">
+                    <img src="images/hosting/photo5.jpg" width="235px" height="113px" class="roundedPix"/>
+                    <p class="bulleText">
+                        <strong> Auberge Le Panier </strong> <br>
+                        Nuit à partir de <strong> 23€ </strong>
+                    </p>  
+
+                    <p class="ratings"> 
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                    </p>
+                </div>
+
+                <div class="bullePhoto">
+                    <img src="images/hosting/photo6.jpg" width="235px" height="113px" class="roundedPix"/>
+                    <p class="bulleText">
+                        <strong> Hôtel chez Amina </strong> <br>
+                        Nuit à partir de <strong> 96€ </strong>
+                    </p>  
+
+                    <p class="ratings"> 
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                    </p>
+                </div>
+            </div>
+            <p><strong> Afficher plus </strong></p>
+        </article>
+
+        <article id="blocDroit">
+            <div id="titrePlusIcon"> 
+                <h3>Les plus populaires</h3>
+                <p><img src="fontawesome/svgs/solid/chart-line.svg" width="17px" /></p>
+            </div>
+
+            <div class="bullePicture">
+                <img src="images/hosting2/photo7.jpg" width="125px" height="130px" class="leftRoundPix"/>
+                
+                <div class="descriptionPhoto">
+                    <p> 
+                        <strong> Hôtel le soleil du matin </strong> <br>
+                        Nuit à partir de <strong> 128€</strong>
+                    </p>
+                    <p class="ratingsRight"> 
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                    </p>
+
+                </div>
+                    
+            </div>
+
+            <div class="bullePicture">
+                <img src="images/hosting2/photo8.jpg" width="125px" height="130px" class="leftRoundPix"/>
+
+                <div class="descriptionPhoto">
+                    <p> 
+                        <strong> Au coeur de l'eau </strong> <br>
+                        <strong> Chambre d'hôtes</strong> <br>
+                        Nuit à partir de <strong> 71€</strong>
+                    </p>
+                    <p class="ratingsRight"> 
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                    </p>
+                </div>    
+
+            </div>
+
+            <div class="bullePicture">
+                <img src="images/hosting2/photo9.jpg" width="125px" height="130px" class="leftRoundPix"/>
+                
+                <div class="descriptionPhoto">
+                    <p> 
+                        <strong> Hôtel tout bleu et Blanc </strong> <br>
+                        Nuit à partir de <strong> 68€</strong>
+                    </p>
+                    <p class="ratingsRight"> 
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                    </p>
+
+                </div>
+
+            </div>
+
+            
+
+        </article>
+
+    </section>   
+
+    <!-- FIN FIN FIN Section des photos des hébergements - SECTION SUPERIEURE FIN FIN FIN FIN FIN -->
+
+    <!-- HTML du bas de page FOOTER -->
+    <footer>
+
+        <article class="articleFooter">
+            <h3>
+                A propos
+            </h3>
+
+            <p>
+                <a>
+                    Fonctionnalités du site
+                </a>
+            </p>
+            
+            <p>
+                <a>
+                    Conditions générales de ventes
+                </a>
+            </p>
+            
+            <p>
+                <a>
+                    Données et confidentialité
+                </a>
+            </p>
+
+        </article>
+
+        <article class="articleFooter">
+
+            <h3>
+                Nos hébergements
+            </h3>
+
+            <p>
+                <a>
+                    Charte qualité
+                </a>
+            </p>
+         
+            <p>
+                <a>
+                    Soumettre votre hotel
+                </a>
+            </p>
+
+        </article>
+            
+            
+        <article class="articleFooter">
+            <h3>
+                Assistance
+            </h3>
+            
+            <p>
+                <a>
+                    Centre d'aide
+                </a>
+            </p>
+            
+            <p>
+                <a>
+                    Nous contacter
+                </a>
+            </p>
+           
+        </article>
+
+
+    </footer>
+
+
+    
 
 
 
