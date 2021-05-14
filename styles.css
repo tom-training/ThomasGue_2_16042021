@@ -358,17 +358,22 @@ button
     display: flex;
 
     margin-left: 1.5%;
+    margin-right: 1.5%;
 }
 
 #blocGauche
 {
     width: 61%;
+    height: 626px;
+    
     border-style: solid;
     border-color: #f2f2f2;
     border-radius: 15px;
 
 
     margin-right: 2.7%;
+    padding-left: 2%;
+    padding-right: 4%;
 
     background-color: #f2f2f2;
 }
@@ -383,15 +388,6 @@ button
     display: flex;
 }
 
-
-#titrePlusIcon
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
 .bullePhoto
 {
     display: flex;
@@ -399,20 +395,22 @@ button
     justify-content: flex-start;
     align-items: flex-start;
 
-    width: 235px;
+    width: 236px;
     height: 200px;
+    margin-right: 4%;
+    margin-bottom: 2%;
 
     border-style: solid;
-    border-radius: 15%;
-    border-color:#ffffff;
+    border-radius: 5%;
+    border-color:#ffffff; 
 
     background-color:#ffffff;
 }
 
 .roundedPix
 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
 }
 
 .bulleText
@@ -430,38 +428,157 @@ button
     margin-left: 1px;
 }
 
+/* CSS de la zone droite de la sectionSuperieure */
+
 #blocDroit
 {
+    width: 32%;
+    height: 572px;
 
-    width: 29%;
     border-style: solid;
     border-color: #f2f2f2;
     border-radius: 15px;
 
+    padding: 2%;
+
     background-color: #f2f2f2;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
+
+#titrePlusIcon
+{
+    display: flex;
+
+    width: 80%;
+    
+    justify-content: space-between;
+
+    
+
+    position: relative;
+    bottom: 4%;
+    
+    
+    
+}
+
 
 .bullePicture
 {
     display: flex;
-    border-radius: 15px;
+
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+
+    margin-bottom: 9%;
+    height: 131px;
+    width: 80%;
 
     background-color: #ffffff;
+
+    position: relative;
+    bottom: 4%;
 
 }
 
 .leftRoundPix
 {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
 }
 
+.descriptionPhoto
+{
+    margin-left: 2%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+}
+
+
+
+.textPhoto
+{
+    position: relative;
+    bottom: 15%;
+}
+
+#ratingsRightMiddle
+{
+    position: relative;
+    bottom: 16%;
+}
+
+#ratingsRightBottom
+{
+    position: relative;
+    bottom: 16%;
+}
 
 
 
 
 /* FIN FIN FIN FIN CSS de la section des photos des hébergements - SECTION SUPERIEURE FIN FIN FIN FIN FIN FIN */
 
+#titreMilieu
+{
+    margin-left: 1.5%;
+}
+
+
+/* CSS de la section inferieure */
+
+#sectionInferieure
+{
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 50px;
+
+    font-weight: bold;
+
+}
+
+.blocPair
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.bullePixPaire, .bullePix
+{
+    display: flex;
+
+    flex-direction: column;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 3px 0px #f3f3f3;
+
+}
+
+.pixInferieures
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* FIN FIN FIN FIN de la section inférieure   FIN FIN FIN FIN */
 
 /* CSS du footer */
 
