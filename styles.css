@@ -19,28 +19,31 @@ header
 {
     display: flex;
 
-    justify-content: space-between;
-
-    margin-top: 0px; /* A virer à la fin */
+    justify-content: flex-end;
+    align-items: center;
 
     padding-left: 1.5%;
+
 }
 
-#blockLogo
+.element
 {
-    width: 14%;
+    margin-right: 3em;
 }
 
-#menunavig
+.element:nth-child(1)
 {
-    width: 37%;
+    flex-grow: 1;
 
-    display: flex;
-    justify-content: space-around;
+    height: 4em;
+
+    text-align: left;
+
 }
 
 .lienMenu
 {
+    height: 4em;
     display: flex;
     align-items: center;
 }

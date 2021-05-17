@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Reservia - votre agence de voyage en ligne</title>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css">  -->
-    <link rel="stylesheet" type="text/css" href="petite_resolution.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="petite_resolution.css"> -->
 
     
     <meta charset="utf-8"/>
@@ -11,19 +11,22 @@
 <body>
     <header>
 
-        <aside id="blockLogo"> <img src="images/reservia.svg"/> </aside>
+        <div class="element">
+            <img id="reserviaLogo" src="images/reservia.svg"/>       
+        </div>
 
+        <div class="element lienMenu">    
+            <a> Hébergements </a>
+        </div>
 
-        <aside id="menunavig">
-            
-            <a class="lienMenu"> Hébergements </a>
-
-            <a class="lienMenu"> Activités </a>
-
-            <button id="boutonSinscrire"> S'inscrire </button> 
+        <div class="element lienMenu">
+            <a> Activités </a>
+        </div>
         
-        </aside>
-     
+        <div class="element">
+            <button type="button" id="boutonSinscrire"> S'inscrire </button> 
+        </div>    
+
     </header>
 
     <section id= "sectionFiltre">
