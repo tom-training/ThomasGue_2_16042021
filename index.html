@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Reservia - votre agence de voyage en ligne</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- <link rel="stylesheet" type="text/css" href="petite_resolution.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)" href="styles.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)" href="petite_resolution.css">
 
     
     <meta charset="utf-8"/>
@@ -31,9 +31,9 @@
 
     <section id= "sectionFiltre">
 
-        <h1> Trouver votre hébergement pour des vacances de rêve </h1>
+        <h1 id="titreFiltre"> Trouver votre hébergement pour des vacances de rêve </h1>
 
-        <p> En plein centre ville ou en pleine nature </p>
+        <p id="slogan"> En plein centre ville ou en pleine nature </p>
 
         <article id="rechercheVille"> 
 
@@ -55,18 +55,18 @@
 
         <article id="filtre">
 
-            <p id="filtresText"> Filtres </p>
+            <p id="filtresText" class="elements elements1"> Filtres </p>
 
             
 
-            <p id="iconEco">
+            <p id="iconEco" class="elements elements2">
                 
                 <img src="fontawesome/svgs/solid/money-bill-wave.svg" width="15px"/>
 
             </p>
         
             
-            <p id="boutonEco">
+            <p id="boutonEco" class="elements elements3">
                 <button> Economique </button> 
             </p>
                 
@@ -74,13 +74,13 @@
 
             
                 
-            <p id= "iconFamille">
+            <p id= "iconFamille" class="elements elements4">
                 
                 <img src="fontawesome/svgs/solid/child.svg" width="15px" /> 
 
             </p>
                 
-            <p id= "boutonFamille">
+            <p id= "boutonFamille" class="elements elements5">
 
                 <button> Familial </button>
             
@@ -90,14 +90,14 @@
 
             
 
-            <p id="iconRomantique"> 
+            <p id="iconRomantique" class= "elements elements6"> 
             
                 <img src="fontawesome/svgs/solid/heart.svg" width="15px"/>
 
             </p>    
                 
             
-            <p id="boutonRomantique">
+            <p id="boutonRomantique" class= "elements elements7">
                 <button> Romantique </button>
             </p>
                 
@@ -106,14 +106,14 @@
 
             
 
-            <p id= "iconAnimaux">
+            <p id= "iconAnimaux" class= "elements elements8">
 
                 <img src="fontawesome/svgs/solid/dog.svg" width="16px" /> 
 
             </p>
             
         
-            <p id= "boutonAnimaux">
+            <p id= "boutonAnimaux" class= "elements elements9">
                 <button> Animaux autorisés </button>
             </p>
             
@@ -128,7 +128,7 @@
 
             </p>    
 
-            <p> 
+            <p id="textPourInfo"> 
                 Plus de 500 logements sont disponible dans cette ville
             </p>
 
@@ -150,7 +150,7 @@
     <section id="sectionSuperieure">
 
         <article id="blocGauche">
-            <h3>Hébergements à Marseille</h3>
+            <h3 id="titreHebergementMarseille"> Hébergements à Marseille </h3>
             <div id="blocGaucheTop">
                 <div class="bullePhoto">
                     <img src="images/hosting/photo1.jpg" width="235px" height="113px" class="roundedPix"/>
@@ -254,7 +254,7 @@
                     </p>
                 </div>
             </div>
-            <p><strong> Afficher plus </strong></p>
+            <p id="afficherPlus"><strong> Afficher plus </strong></p>
         </article>
 
         <article id="blocDroit">
@@ -264,7 +264,7 @@
             </div>
 
             <div class="bullePicture">
-                <img src="images/hosting/photo7.jpg" width="125px" height="130px" class="leftRoundPix"/>
+                <img src="images/hosting/photo7.jpg" width="125px" height="133px" class="leftRoundPix"/>
                 
                 <div class="descriptionPhoto">
                     <p class="textPhoto"> 
@@ -284,7 +284,7 @@
             </div>
 
             <div class="bullePicture">
-                <img src="images/hosting/photo8.jpg" width="125px" height="130px" class="leftRoundPix"/>
+                <img src="images/hosting/photo8.jpg" width="125px" height="133px" class="leftRoundPix"/>
 
                 <div class="descriptionPhoto">
                     <p class="textPhoto"> 
@@ -303,7 +303,7 @@
             </div>
 
             <div class="bullePicture">
-                <img src="images/hosting/photo9.jpg" width="125px" height="130px" class="leftRoundPix"/>
+                <img src="images/hosting/photo9.jpg" width="125px" height="133px" class="leftRoundPix"/>
                 
                 <div class="descriptionPhoto">
                     <p class="textPhoto"> 

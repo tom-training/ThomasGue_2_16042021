@@ -336,7 +336,8 @@ button
     width: 20px;
     height: 20px;
     border-style: solid;
-    border-color: #deebff;
+    border-width: thin;
+    border-color: #dedede;
     border-radius: 50%; 
     
     display: flex;
@@ -462,8 +463,6 @@ button
     
     justify-content: space-between;
 
-    
-
     position: relative;
     bottom: 4%;
     
@@ -481,7 +480,7 @@ button
     border-radius: 10px;
 
     margin-bottom: 9%;
-    height: 131px;
+    height: 134px;
     width: 80%;
 
     background-color: #ffffff;
@@ -512,8 +511,9 @@ button
 .textPhoto
 {
     position: relative;
-    bottom: 15%;
+    bottom: 10%;
 }
+
 
 #ratingsRightMiddle
 {
@@ -521,12 +521,13 @@ button
     bottom: 16%;
 }
 
+/*
 #ratingsRightBottom
 {
     position: relative;
     bottom: 16%;
 }
-
+*/
 
 
 
