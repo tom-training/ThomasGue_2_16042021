@@ -95,9 +95,11 @@ input[type="submit"], input[type="text"]
 
     width: 33%;
 
-    height: 50px;
+    height: 3em; 
 
     border-radius: 15px;
+
+    margin-bottom: 1em;
 }
 
 /* CSS de la zone icone */    
@@ -107,7 +109,7 @@ input[type="submit"], input[type="text"]
     background-color: #f2f2f2;
     width: 13%;
 
-    height: 50px;
+    height: 100%; 
 
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -123,7 +125,7 @@ input[type="submit"], input[type="text"]
 {
     width: 55%;
 
-    height: 50px;
+    height: 100%; 
 
     font-weight: bold;
 
@@ -145,7 +147,7 @@ input[type="submit"], input[type="text"]
 
     width: 32%;
 
-    height: 50px;
+    height: 100%; 
 
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -164,13 +166,17 @@ input[type="submit"], input[type="text"]
 
     font-weight: bold;
 
+    height: 3em;
+    
+    margin-bottom: 1em;
+
 }
 
 /* CSS du texte Filtres: */
 #filtresText
 {
-    width: 5%;
-    height: 48px;
+    width: 4em;
+    height: 100%;
 
     display: flex;
     align-items: center;
@@ -186,10 +192,10 @@ input[type="submit"], input[type="text"]
     border-color: #deebff;
     
     position: relative;
-    left: 24px;
+    left: 1.3em; 
     
-    width: 48px;
-    height: 48px;
+    width: 3em;
+    height: 100%;
 
     border-radius: 50%;
     
@@ -204,10 +210,10 @@ input[type="submit"], input[type="text"]
     border-color: #deebff;
 
     position: relative;
-    left: 24px;
+    left: 1.3em; 
     
-    width: 48px;
-    height: 48px;
+    width: 3em;
+    height: 100%;
 
     border-radius: 50%;
     
@@ -222,10 +228,10 @@ input[type="submit"], input[type="text"]
     border-color: #deebff;
 
     position: relative;
-    left: 24px;
+    left: 1.3em; 
     
-    width: 48px;
-    height: 48px;
+    width: 3em;
+    height: 100%;
 
     border-radius: 50%;
 
@@ -241,10 +247,10 @@ input[type="submit"], input[type="text"]
     border-color: #deebff;
 
     position: relative;
-    left: 24px;
+    left: 1.3em; 
          
-    width: 48px;
-    height: 48px;
+    width: 3em;
+    height: 100%;
 
     border-radius: 50%;
 
@@ -266,8 +272,8 @@ button
 /* propriétés CSS individuelles des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
 #boutonEco
 {
-    width: 12%;
-    height: 48px;
+    width: 10em;
+    height: 100%;
     border-color: #d9d9d9;
     border-style: solid;
 
@@ -280,8 +286,8 @@ button
 
 #boutonFamille
 {
-    width: 9%;
-    height: 48px;
+    width: 8em;
+    height: 100%;
     border-color: #d9d9d9;
     border-style: solid;
     
@@ -294,8 +300,8 @@ button
 
 #boutonRomantique
 {
-    width: 11%;
-    height: 48px;
+    width: 10em;
+    height: 100%;
     border-color: #d9d9d9;
     border-style: solid;
 
@@ -308,8 +314,8 @@ button
 
 #boutonAnimaux
 {
-    width: 15%;
-    height: 48px;
+    width: 13em;
+    height: 100%;
     border-color: #d9d9d9;
     border-style: solid;
 
