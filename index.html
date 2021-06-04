@@ -23,7 +23,7 @@
             <a> Activités </a>
         </div>
         
-        <div class="element">
+        <div>
             <button type="button" id="boutonSinscrire"> S'inscrire </button> 
         </div>    
 
@@ -39,7 +39,7 @@
 
             <p id="pointe"> 
                 
-                <img src="fontawesome/svgs/solid/map-marker-alt.svg" width="10px" />
+                <img src="fontawesome/svgs/solid/map-marker-alt.svg" id="pointePix"/> 
 
             </p>    
 
@@ -61,7 +61,7 @@
 
             <p id="iconEco" class="elements elements2">
                 
-                <img src="fontawesome/svgs/solid/money-bill-wave.svg" width="15px"/>
+                <img src="fontawesome/svgs/solid/money-bill-wave.svg" class="iconPix"/>
 
             </p>
         
@@ -76,7 +76,7 @@
                 
             <p id= "iconFamille" class="elements elements4">
                 
-                <img src="fontawesome/svgs/solid/child.svg" width="15px" /> 
+                <img src="fontawesome/svgs/solid/child.svg" class="iconPix"/> 
 
             </p>
                 
@@ -92,7 +92,7 @@
 
             <p id="iconRomantique" class= "elements elements6"> 
             
-                <img src="fontawesome/svgs/solid/heart.svg" width="15px"/>
+                <img src="fontawesome/svgs/solid/heart.svg" class="iconPix"/>
 
             </p>    
                 
@@ -108,7 +108,7 @@
 
             <p id= "iconAnimaux" class= "elements elements8">
 
-                <img src="fontawesome/svgs/solid/dog.svg" width="16px" /> 
+                <img src="fontawesome/svgs/solid/dog.svg" class="iconPix"/> 
 
             </p>
             
@@ -124,7 +124,7 @@
 
             <p id="iPourInfo"> 
                 
-                <img src="fontawesome/svgs/solid/info.svg" width="4px" />
+                <img src="fontawesome/svgs/solid/info.svg" id="pourInfoPix"/>
 
             </p>    
 
@@ -150,133 +150,161 @@
     <section id="sectionSuperieure">
 
         <article id="blocGauche">
+
             <h3 id="titreHebergementMarseille"> Hébergements à Marseille </h3>
+
             <div id="blocGaucheTop">
                 <div class="bullePhoto">
-                    <img src="images/hosting/photo1.jpg" width="235px" height="113px" class="roundedPix"/>
-                    <p class="bulleText">
-                        <strong>Auberge la Cannebière</strong> <br>
-                        Nuit à partir de <strong> 25€ </strong>
+                    <img src="images/hosting/photo1.jpg" class="roundedPix"/>
+
+                    <p class="bulleTitreText">
+                        Auberge la Cannebière
                     </p>  
 
+                    <p class="bulleText">
+                        Nuit à partir de <span class="bulleTextBold"> 25€ </span> 
+                    </p>
+
                     <p class="ratings"> 
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
                     </p>
                     
                 </div>
 
                 <div class="bullePhoto">
-                    <img src="images/hosting/photo2.jpg" width="235px" height="113px" class="roundedPix"/>
+                    <img src="images/hosting/photo2.jpg" class="roundedPix"/>
+                    
+                    <p class="bulleTitreText">
+                        Hôtel du port 
+                    </p>
+                    
                     <p class="bulleText">
-                        <strong> Hôtel du port </strong> <br>
-                        Nuit à partir de <strong> 52€ </strong>
-                    </p>  
+                        Nuit à partir de <span class="bulleTextBold"> 52€ </span>
+                    </p>
 
                     <p class="ratings"> 
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                     </p>
 
 
                 </div>
 
                 <div class="bullePhoto">
-                    <img src="images/hosting/photo3.jpg" width="235px" height="113px" class="roundedPix" />
+                    <img src="images/hosting/photo3.jpg" class="roundedPix" />
 
-                    <p class="bulleText">
-                        <strong> Hôtel Les mouettes </strong> <br>
-                        Nuit à partir de <strong> 76€ </strong>
+                    <p class="bulleTitreText">
+                        Hôtel Les mouettes
                     </p>  
 
+                    <p class="bulleText">
+                        Nuit à partir de <span class="bulleTextBold"> 76€ </span>
+                    </p>
+
                     <p class="ratings"> 
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
                     </p>
                 </div>
 
             </div>
             <div id="blocGaucheBas">
                 <div class="bullePhoto">
-                    <img src="images/hosting4/photo4.jpg" width="235px" height="113px" class="roundedPix"/>
-                    <p class="bulleText">
-                        <strong> Hôtel de la mer </strong> <br>
-                        Nuit à partir de <strong> 46€ </strong>
+                    <img src="images/hosting/photo4.jpg" class="roundedPix"/>
+
+                    <p class="bulleTitreText">
+                        Hôtel de la mer
                     </p>  
 
+                    <p class="bulleText">
+                        Nuit à partir de <span class="bulleTextBold"> 46€ </span>
+                    </p>
                     <p class="ratings"> 
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
                     </p>
                 </div>
 
                 <div class="bullePhoto">
-                    <img src="images/hosting/photo5.jpg" width="235px" height="113px" class="roundedPix"/>
-                    <p class="bulleText">
-                        <strong> Auberge Le Panier </strong> <br>
-                        Nuit à partir de <strong> 23€ </strong>
+                    <img src="images/hosting/photo5.jpg" class="roundedPix"/>
+                    
+                    <p class="bulleTitreText">
+                        Auberge Le Panier
                     </p>  
 
+                    <p class="bulleText">
+                        Nuit à partir de <span class="bulleTextBold"> 23€ </span>
+                    </p>
+
                     <p class="ratings"> 
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
+                        <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
                     </p>
                 </div>
 
                 <div class="bullePhoto">
-                    <img src="images/hosting/photo6.jpg" width="235px" height="113px" class="roundedPix"/>
+                    <img src="images/hosting/photo6.jpg" class="roundedPix"/>
+
+                    <p class="bulleTitreText">
+                        Hôtel chez Amina
+                    </p>
+                    
                     <p class="bulleText">
-                        <strong> Hôtel chez Amina </strong> <br>
-                        Nuit à partir de <strong> 96€ </strong>
-                    </p>  
+                        Nuit à partir de <span class="bulleTextBold"> 96€ </span>
+                    </p>
 
                     <p class="ratings"> 
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
                     </p>
                 </div>
             </div>
-            <p id="afficherPlus"><strong> Afficher plus </strong></p>
+            <p id="afficherPlus"> Afficher plus </p>
         </article>
 
         <article id="blocDroit">
             <div id="titrePlusIcon"> 
                 <h3>Les plus populaires</h3>
-                <p><img src="fontawesome/svgs/solid/chart-line.svg" width="17px" id="iconGraph"/></p>
+                <p><img src="fontawesome/svgs/solid/chart-line.svg" id="iconGraph"/></p>
             </div>
 
             <div class="bullePicture">
-                <img src="images/hosting/photo7.jpg" width="125px" height="133px" class="leftRoundPix"/>
+                <img src="images/hosting/photo7.jpg" class="leftRoundPix"/>
                 
                 <div class="descriptionPhoto">
-                    <p class="textPhoto"> 
-                        <strong> Hôtel le soleil du matin </strong> <br> <br>
-                        Nuit à partir de <strong> 128€</strong>
+                    <p class="titreTextPhoto"> 
+                        Hôtel le soleil du matin
                     </p>
-                    <p> 
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
+
+                    <p class="textPhoto">
+                        Nuit à partir de <span class="textPictureGras"> 128€</span>
+                    </p>
+
+                    <p class="ratingsDroit"> 
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
                     </p>
 
                 </div>
@@ -284,45 +312,52 @@
             </div>
 
             <div class="bullePicture">
-                <img src="images/hosting/photo8.jpg" width="125px" height="133px" class="leftRoundPix"/>
+                <img src="images/hosting/photo8.jpg" class="leftRoundPix"/>
 
                 <div class="descriptionPhoto">
-                    <p class="textPhoto"> 
-                        <strong> Au coeur de l'eau Chambre d'hôtes</strong> <br><br>
-                        Nuit à partir de <strong> 71€</strong>
+                    <p class="titreTextPhoto"> 
+                        Au coeur de l'eau Chambre d'hôtes
                     </p>
-                    <p id="ratingsRightMiddle"> 
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+
+                    <p class="textPhoto">
+                        Nuit à partir de <span class="textPictureGras"> 71€</span>
+                    </p>
+
+                    <p class="ratingsDroit"> 
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit"/>
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star-grey.svg" class="starPixDroit" />
                     </p>
                 </div>    
 
             </div>
 
             <div class="bullePicture">
-                <img src="images/hosting/photo9.jpg" width="125px" height="133px" class="leftRoundPix"/>
+                <img src="images/hosting/photo9.jpg" class="leftRoundPix"/>
                 
                 <div class="descriptionPhoto">
-                    <p class="textPhoto"> 
-                        <strong> Hôtel tout bleu et Blanc </strong> <br> <br>
-                        Nuit à partir de <strong> 68€</strong>
+                    <p class="titreTextPhoto"> 
+                        Hôtel tout bleu et Blanc </p>
                     </p>
-                    <p id=ratingsRightBottom> 
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star.svg" width="15px" />
-                        <img src="fontawesome/svgs/solid/star-grey.svg" width="15px" />
+
+                    <p class="textPhoto"> 
+                        Nuit à partir de <span class="textPictureGras"> 68€</span>
+                    </p>
+
+                    <p class="ratingsDroit"> 
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star-grey.svg" class="starPixDroit" />
                     </p>
 
                 </div>
 
             </div>
-
-            
+      
 
         </article>
 
