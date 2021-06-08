@@ -22,25 +22,29 @@ header
     display: flex;
 
     flex-wrap: wrap;
-    
-    justify-content: space-between;
-    /*padding-left: 1.5%; */
-
-    border-bottom-style: solid;
-    border-bottom-color: #f2f2f2;
-
 }
 
 
 
 .element:nth-child(1)
 {
-    text-align: left;
+    display: flex;
+
+    justify-content: flex-start;
 
     order: 1;
 
     width: 48%;
 
+    position: relative;
+    right: 5%;
+}
+
+#reserviaLogo
+{
+    height: 3em;
+
+    width: 100%;
 }
 
 .element:nth-child(2)
@@ -53,6 +57,9 @@ header
 
     display: flex;
     justify-content: center;
+
+    position: relative;
+    left: 5%;
     
 }
 
@@ -65,8 +72,6 @@ header
     width: 48%;
     margin-top: 1em;
     
-    
-
     display: flex;
     justify-content: center;
 
@@ -79,15 +84,24 @@ header
 
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    /*align-items: center; */
 }
 
-
+.lienMenu
+{
+    border-color: #f2f2f2;
+    border-bottom-style: solid;
+    padding-bottom: 4%;
+}
 
 .lienMenu:hover
 {
     color: #3081fd;
     border-bottom-style: solid;
+    border-color: #3081fd;
+    padding-bottom: 4%;
+
+    
 }
 
 
@@ -111,12 +125,12 @@ header
 
 #titreFiltre
 {
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 #slogan
 {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 /* CSS de la zone de texte: recherche ville et bouton submit associé  */
@@ -139,11 +153,13 @@ input[type="submit"], input[type="text"]
 
     align-items: center;
 
+    margin-left: 2%;
+    margin-right: 2%;
     width: 100%;
 
-    height: 50px;
+    height: 2.5em;
 
-    border-radius: 15px;
+    border-radius: 20%;
 }
 
 /* CSS de la zone icone */    
@@ -151,32 +167,40 @@ input[type="submit"], input[type="text"]
 #pointe
 {
     background-color: #f2f2f2;
-    width: 13%;
+    width: 12%;
 
-    height: 50px;
+    height: 100%;
 
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#pointePix
+{
+    width: 1em;
 }
 
 /* CSS de la zone de texte */
 
 #laVille
 {
-    width: 55%;
+    width: 70%;
 
-    height: 50px;
+    height: 100%;
 
     font-weight: bold;
 
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-}
+    /*padding-left: 5%; */
+
+    /* text-align: center; */
+ }
 
 /* CSS de la zone du bouton submit */
 
@@ -189,18 +213,26 @@ input[type="submit"], input[type="text"]
 
     font-weight: bold;
 
-    width: 32%;
+    width: 12%;
 
-    height: 50px;
+    height: 100%;
 
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 20%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url("fontawesome/svgs/solid/search.svg");
     
 }
+
+#textValid
+{
+    display: none;
+}
+
+
 
 /* CSS de la ligne de filtes : Eco, Famil., Romantiq., Animaux */
 
@@ -219,10 +251,15 @@ input[type="submit"], input[type="text"]
     display: flex;
     align-items: center; 
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /* CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
+
+.iconPix
+{
+    width: 1.2em;
+}
 
 #iconEco
 {
@@ -234,8 +271,8 @@ input[type="submit"], input[type="text"]
     display: flex;
     justify-content: center;
 
-    width: 48px;
-    height: 48px;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;  
     
     
@@ -248,8 +285,8 @@ input[type="submit"], input[type="text"]
     border-width: thick;
     border-color: #deebff;
     
-    width: 48px;
-    height: 48px;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
 
     display: flex;
@@ -266,14 +303,12 @@ input[type="submit"], input[type="text"]
     border-width: thick;
     border-color: #deebff;
 
-    width: 48px;
-    height: 48px;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
 
     display: flex;
     justify-content: center;
-
-
 }
 
 #iconAnimaux
@@ -283,8 +318,8 @@ input[type="submit"], input[type="text"]
     border-width: thick;
     border-color: #deebff;
      
-    width: 48px;
-    height: 48px;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
 
     display: flex;
@@ -309,17 +344,21 @@ button
     border-style: solid;
     border-left-style: none;
 
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
 
     display: flex;
     justify-content: center;
 
-    width: 35%;
-    margin-right: 1em;
-
+    width: 38%;
+    
+    
     position: relative;
-    right: 24px;
+    right: 6%;
+
+    font-size: 0.9em;
+
+    padding-left: 2%;
 }
 
 #boutonFamille
@@ -329,16 +368,18 @@ button
     border-style: solid;
     border-left-style: none;
     
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
 
     display: flex;
     justify-content: center;
 
-    width: 35%;
+    width: 30%;
 
     position: relative;
-    right: 24px;
+    right: 6%;
+
+    font-size: 0.9em;
 }
 
 #boutonRomantique
@@ -349,37 +390,40 @@ button
     border-left-style: none;
 
 
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
 
-    width: 35%;
-    margin-right: 12em;
+    width: 42%;
+
+    margin-right: 40%;
     
     display: flex;
     justify-content: center;
 
     position: relative;
-    right: 24px;
+    right: 6%;
+
+    font-size: 0.9em;
 }
 
 #boutonAnimaux
 {
-   
     border-color: #d9d9d9;
     border-style: solid;
     border-left-style: none;
 
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
 
     display: flex;
     justify-content: center;
 
-    width: 45%;
+    width: 52%;
 
     position: relative;
-    right: 24px;
-    
+    right: 6%;
+
+    font-size: 0.9em;
 }
 
 
@@ -391,14 +435,13 @@ button
 {
     display: flex;
 
-    align-items: baseline;
-    
+    align-items: baseline;    
 }
 
 #iPourInfo
 {
-    width: 25px;
-    height: 25px;
+    height: 1em;
+    width: 1em;
     border-style: solid;
     border-width: thin;
     border-color: #dedede;
@@ -407,16 +450,21 @@ button
     display: flex;
     justify-content: center;
     
-    margin-right: 1em;
+    margin-right: 0.5em;   
+     
     position: relative;
-    top: 4px;
+    top: 0.1em;
 }
 
 #textPourInfo
 {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
+#pourInfoPix
+{
+    width: 0.2em;
+}
 
 
 /* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
@@ -467,6 +515,7 @@ button
     justify-content: flex-start;
     align-items: flex-start;
 
+    height: 17em;
     width: 80%;
     
     border-style: solid;
@@ -480,40 +529,52 @@ button
     margin-bottom: 5%;
 }
 
+.starPix
+{
+    width: 1em;
+    
+}
+
+.starPixDroit
+{
+    width: 1em;
+}
+
 .roundedPix
 {
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
 
     width: 100%;
+
+    height: 65%;
 }
 
-#afficherPlus
+
+.bulleTitreText
 {
-    margin-left: 8%;
+    height: 1%;
+    font-weight: bold;
 }
 
-/*
+
+
 .bulleText
 {
-    position: relative;
+   /* position: relative;
     bottom: 10px;
     margin-left: 1px;
+    */
+    height: 1%;
 }
-*/
-/*
+
+
 .ratings
 {
-    
     display: flex;
-    
-    
-    position: relative;
-    bottom: 36px;
-    margin-left: 1px;
-    
+    height: 5%;  
 }
-*/
+
 
 /* CSS de la zone droite de la sectionSuperieure */
 
@@ -553,7 +614,7 @@ button
     margin-bottom: 9%;
 
     width: 80%;
-    height: 134px;
+    height: 7em;
 
     background-color: #ffffff;
 }
@@ -563,7 +624,8 @@ button
     border-top-left-radius: 11px;
     border-bottom-left-radius: 11px;
 
-    width: 33%;
+    width: 40%;
+    height: 100%;
 
 }
 
@@ -571,10 +633,14 @@ button
 {
     margin-left: 2%;
 
-    display: flex;
+    /*display: flex;
     flex-direction: column;
 
     justify-content: flex-start;
+    */
+    width: 60%;
+
+    font-size: 0.8em;
 }
 
 
@@ -591,6 +657,12 @@ button
 {
     position: relative;
     bottom: 10%;
+}
+
+
+#afficherPlus
+{
+    margin-left: 8%;
 }
 
 /*
@@ -624,7 +696,7 @@ button
     font-weight: bold;
 }
 
-.blocPair
+.blocActivite
 {
     display: flex;
     flex-direction: column;
@@ -634,16 +706,8 @@ button
     width: 100%;
 }
 
-.blocImpair
-{
-    width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bullePixPaire, .bullePix
+#bullePix1, #bullePix2, #bullePix3, #bullePix4, #bullePix5, #bullePix6
 {
     display: flex;
 
@@ -655,9 +719,9 @@ button
 
     width: 80%;
 
-    margin-bottom: 5%;
+    height: 15em;
 
-
+    margin-bottom: 5%; 
 }
 
 .pixInferieures
@@ -666,7 +730,15 @@ button
     border-top-right-radius: 15px;
 
     width: 100%;
-    height: 133px;
+    height: 80%;
+}
+
+.pixDescrip
+{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
 }
 
 /* FIN FIN FIN FIN de la section inférieure   FIN FIN FIN FIN */
