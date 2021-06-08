@@ -98,7 +98,7 @@ input[type="submit"], input[type="text"]
 
     height: 3em; 
 
-    border-radius: 15px;   /* BORDER RADIUS */
+    border-radius: 10%;   /* BORDER RADIUS */
 
     margin-bottom: 1em;
 }
@@ -112,8 +112,8 @@ input[type="submit"], input[type="text"]
 
     height: 100%; 
 
-    border-top-left-radius: 15px;                   /* BORDER RADIUS */
-    border-bottom-left-radius: 15px;                /* BORDER RADIUS */
+    border-top-left-radius: 20%;                   /* BORDER RADIUS */
+    border-bottom-left-radius: 20%;                /* BORDER RADIUS */
 
     display: flex;
     justify-content: center;
@@ -155,13 +155,18 @@ input[type="submit"], input[type="text"]
 
     height: 100%; 
 
-    border-top-right-radius: 15px;                      /* BORDER RADIUS */
-    border-bottom-right-radius: 15px;                   /* BORDER RADIUS */
+    border-top-right-radius: 10%;                      /* BORDER RADIUS */
+    border-bottom-right-radius: 10%;                   /* BORDER RADIUS */
 
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+
+#loupeValid
+{
+    display: none;
 }
 
 /* CSS de la ligne de filtes : Eco, Famil., Romantiq., Animaux */
@@ -394,7 +399,7 @@ button
     
     border-style: solid;
     border-color: #f2f2f2;
-    border-radius: 15px;                        /* BORDER RADIUS */
+    border-radius: 3%;                        /* BORDER RADIUS */
 
 
     margin-right: 3%;                   /* MARGE MARGE */
@@ -477,8 +482,8 @@ button
 
 .roundedPix
 {
-    border-top-left-radius: 11px;               /* BORDER RADIUS */
-    border-top-right-radius: 11px;              /* BORDER RADIUS */
+    border-top-left-radius: 5%;               /* BORDER RADIUS */
+    border-top-right-radius: 5%;              /* BORDER RADIUS */
     width: 100%;
     height: 7em;
 }
@@ -534,7 +539,7 @@ button
 
     border-style: solid;
     border-color: #f2f2f2;
-    border-radius: 15px;                          /* BORDER RADIUS */ 
+    border-radius: 4%;                          /* BORDER RADIUS */ 
     
     padding: 1%;
 
@@ -575,7 +580,7 @@ button
 
     border-style: solid;
     border-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5%;
 
     /*margin-bottom: 9%; */                     /*MARGIN */
     height: 20%;
@@ -591,8 +596,8 @@ button
 
 .leftRoundPix
 {
-    border-top-left-radius: 11px;
-    border-bottom-left-radius: 11px;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
 
     width: 40%;
     height: 100%;
@@ -687,7 +692,7 @@ button
 
 #titreMilieu
 {
-    margin-left: 1.5%;
+    margin-left: 3.5%;
 }
 
 
@@ -699,39 +704,121 @@ button
     display: flex;
     justify-content: space-between;
 
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    margin-bottom: 50px;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-bottom: 3.5%;
 
     font-weight: bold;
 
 }
 
-.blocPair
+.blocActivite   
 {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    width: 22%;
+    height: 28em;
+
 }
 
-.bullePixPaire, .bullePix
+#bullePix1, #bullePix2, #bullePix3, #bullePix4, #bullePix5, #bullePix6
 {
-    display: flex;
+    /*display: flex;
 
     flex-direction: column;
+
+    justify-content: space-between; */
 
     border-radius: 15px;
 
     box-shadow: 0px 3px 0px #f3f3f3;
 
+    width: 100%;
+
 }
+
+#bullePix1                                                 /*BIG PIX */                        
+{
+    height: 100%;                                         
+}
+
+#pixInf1                                                /*BIG PIX */      
+{
+    height: 88%;
+}
+
+/* WORK IN PROGRESS    WORK IN PROGRESS   WORK IN PROGRESS  */
+
+#bullePix2                                  
+{
+    height: 53%;
+    
+}
+
+#pixInf2
+{
+    height: 75%;
+}
+
+#bullePix3
+{
+    height: 42%;
+}
+
+#pixInf3
+{
+    height: 71%;
+}
+
+
+#bullePix4                                              /*BIG PIX */  
+{
+    height: 100%;
+}
+
+#pixInf4                                               /*BIG PIX */                         
+{
+    height: 88%;
+}
+
+#bullePix5                                      /*PIX 50% */
+{
+    height: 48%;
+    
+}
+
+#pixInf5                                            /*PIX 50% */
+{
+    height: 75%;
+}
+
+#bullePix6
+{
+    height: 48%;
+}
+
+#pixInf6                                            /*PIX 50% */
+{
+    height: 75%;
+}
+
 
 .pixInferieures
 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+
+    width: 100%;
+}
+
+.pixDescrip
+{
+    /*height: 2%; */
+    display: flex; 
+    align-items: center;
+    padding-left: 5%;
 }
 
 /* FIN FIN FIN FIN de la section inférieure   FIN FIN FIN FIN */
@@ -740,11 +827,12 @@ button
 
 footer
 {
-    padding-left: 1.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
     background-color: #f2f2f2;
 
     display: flex;
-
+    /*justify-content: space-between; */
 }
 
 
