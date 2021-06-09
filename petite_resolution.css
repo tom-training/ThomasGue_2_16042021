@@ -35,16 +35,11 @@ header
     order: 1;
 
     width: 48%;
-
-    position: relative;
-    right: 5%;
 }
 
 #reserviaLogo
 {
     height: 3em;
-
-    width: 100%;
 }
 
 .element:nth-child(2)
