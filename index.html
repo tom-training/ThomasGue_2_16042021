@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px) and (max-width: 1600px)" href="styles.css"/> 
     
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 1024px)" href="petite_resolution.css"/>
@@ -45,20 +43,25 @@
 
         <article id="rechercheVille"> 
 
-            <p id="pointe"> 
+            <div id="pointe"> 
                 
                 <img src="fontawesome/svgs/solid/map-marker-alt.svg" id="pointePix"/> 
 
-            </p>    
+            </div>    
 
-            <p id="laVille"> 
-                <input type="text" value="Marseille, France"/>
-            </p>
+            <form id=formVille>
 
-            <p id="valid"> 
-                <input type="submit" value="Rechercher" id="textValid"/>
-                <input type="submit" value="" id="loupeValid"/>
-            </p>    
+                <p id="laVille"> 
+                    <input type="text" value="Marseille, France"/>
+                </p>
+    
+                <p id="valid"> 
+                    <input type="submit" value="Rechercher" id="textValid"/>
+                    <input type="submit" value="" id="loupeValid"/>
+                </p>  
+
+            </form>
+            
 
         </article>
 
