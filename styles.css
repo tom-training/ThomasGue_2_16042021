@@ -13,18 +13,14 @@
 
 /* flexbox et CSS de la zone d'entête */
 
-
 /* Le header va dispatcher le logo Reservia à gauche et hébergement/Activités et le bouton s'inscrire sur la droite */
 header
 {
     display: flex;
-
     justify-content: flex-end;
     align-items: center;
-
     padding-left: 3.5%;                      /* MARGE MARGE */
     padding-right: 3.5%;                     /* MARGE MARGE */
-   
 }
 
 .element
@@ -35,11 +31,8 @@ header
 .element:nth-child(1)
 {
     flex-grow: 1;
-
     height: 4em;
-
     text-align: left;
-
 }
 
 .lienMenu
@@ -66,24 +59,20 @@ header
     height: 3em;
 }
 
-
 /* flexbox de la zone d'entête FIN FIN FIN CSS de la zone d'entête FIN FIN FIN*/
 
 /* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
 
-
-
 #sectionFiltre
 {
-    margin-left: 3.5%;                          /*MARGE MARGE */
-  
+    margin-left: 3.5%;                          /*MARGE MARGE */  
 }
 
-/* CSS de la zone de texte: recherche ville et bouton submit associé  */
-input[type="submit"], input[type="text"] 
+/* CSS pour modifier le formatage par defaut des balises de type SUBMIT et SEARCH*/
+input[type="submit"], input[type="search"] 
 {
 	background: none;
-	color: inherit;
+    color: inherit;
 	border: none;
 	padding: 0;
 	font: inherit;
@@ -96,15 +85,9 @@ input[type="submit"], input[type="text"]
 #rechercheVille
 {
     display: flex;
-
     align-items: center;
-
-    width: 33%;
-
+    width: 50%;
     height: 3em; 
-
-    border-radius: 10%;   /* BORDER RADIUS */
-
     margin-bottom: 1em;
 }
 
@@ -114,12 +97,9 @@ input[type="submit"], input[type="text"]
 {
     background-color: #f2f2f2;
     width: 13%;
-
     height: 100%; 
-
-    border-top-left-radius: 20%;                   /* BORDER RADIUS */
-    border-bottom-left-radius: 20%;                /* BORDER RADIUS */
-
+    border-top-left-radius: 10px;                   /* BORDER RADIUS */
+    border-bottom-left-radius: 10px;                /* BORDER RADIUS */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,44 +112,38 @@ input[type="submit"], input[type="text"]
 
 /* CSS de la zone de texte */
 
+#formVille
+{
+    width: 87%;
+}
+
 #laVille
 {
-    width: 55%;
-
-    height: 100%; 
-
     font-weight: bold;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: black; 
+    padding-left: 1em;  
+    width: 30%;
 }
 
 /* CSS de la zone du bouton submit */
 
-#valid
+#textValid
 {
-
     background-color: #0065fc;
-
     color: #ffffff;
-
     font-weight: bold;
-
-    width: 32%;
-
-    height: 100%; 
-
-    border-top-right-radius: 10%;                      /* BORDER RADIUS */
-    border-bottom-right-radius: 10%;                   /* BORDER RADIUS */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    height: 3em;
+    width: 30%;
+    border-top-right-radius: 10px;                      /* BORDER RADIUS */ 
+    border-bottom-right-radius: 10px;                   /* BORDER RADIUS */  
 }
 
 #loupeValid
+{
+    display: none;
+}
+
+#labelLoupeValid
 {
     display: none;
 }
@@ -179,13 +153,9 @@ input[type="submit"], input[type="text"]
 #filtre
 {
     display: flex;
-
     font-weight: bold;
-
     height: 3em;
-    
     margin-bottom: 1em;
-
 }
 
 /* CSS du texte Filtres: */
@@ -193,86 +163,25 @@ input[type="submit"], input[type="text"]
 {
     width: 4em;
     height: 100%;
-
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 /* CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
 
-#iconEco
+.iconBlock
 {
     background-color: #deebff;
     border-style: solid;
-    border-color: #deebff;
-    
-    position: relative;
-    left: 1.3em; 
-    
+    border-color: #deebff;  
     width: 3em;
     height: 100%;
-
     border-radius: 50%;
-    
-    display: flex;
-    justify-content: center;
-}
-
-#iconFamille
-{
-    background-color: #deebff;
-    border-style: solid;
-    border-color: #deebff;
-
-    position: relative;
-    left: 1.3em; 
-    
-    width: 3em;
-    height: 100%;
-
-    border-radius: 50%;
-    
-    display: flex;
-    justify-content: center;
-}
-
-#iconRomantique
-{
-    background-color: #deebff;
-    border-style: solid;
-    border-color: #deebff;
-
-    position: relative;
-    left: 1.3em; 
-    
-    width: 3em;
-    height: 100%;
-
-    border-radius: 50%;
-
     display: flex;
     justify-content: center;
 
-}
-
-#iconAnimaux
-{
-    background-color: #deebff;
-    border-style: solid;
-    border-color: #deebff;
-
-    position: relative;
+    position: relative;                     /* POSITION RELATIVE */
     left: 1.3em; 
-         
-    width: 3em;
-    height: 100%;
-
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-
 }
 
 .iconPix
@@ -280,76 +189,49 @@ input[type="submit"], input[type="text"]
     width: 35%;
 }
 
-/* propriétés générales CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
 
+/* propriétés générales CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
+/* CSS pour modifier le formatage par defaut des balises BUTTON */
 button 
 {
 	background: none;
 	border: none;
-	font: inherit;
-	
+	font: inherit;	
+}
+
+.boutonBlock
+{
+    height: 100%;
+    border-color: #d9d9d9;
+    border-style: solid;
+    border-top-right-radius: 30px;                  /* BORDER RADIUS */
+    border-bottom-right-radius: 30px;               /* BORDER RADIUS */
+    display: flex;
+    justify-content: center;
 }
 
 /* propriétés CSS individuelles des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
 #boutonEco
 {
     width: 10em;
-    height: 100%;
-    border-color: #d9d9d9;
-    border-style: solid;
-
-    border-top-right-radius: 30px;                  /* BORDER RADIUS */
-    border-bottom-right-radius: 30px;               /* BORDER RADIUS */
-
-    display: flex;
-    justify-content: center;
 }
 
 #boutonFamille
 {
     width: 8em;
-    height: 100%;
-    border-color: #d9d9d9;
-    border-style: solid;
-    
-    border-top-right-radius: 30px;                  /* BORDER RADIUS */
-    border-bottom-right-radius: 30px;               /* BORDER RADIUS */
-
-    display: flex;
-    justify-content: center;
 }
 
 #boutonRomantique
 {
     width: 10em;
-    height: 100%;
-    border-color: #d9d9d9;
-    border-style: solid;
-
-    border-top-right-radius: 30px;                  /* BORDER RADIUS */
-    border-bottom-right-radius: 30px;               /* BORDER RADIUS */
-    
-    display: flex;
-    justify-content: center;
 }
 
 #boutonAnimaux
 {
     width: 13em;
-    height: 100%;
-    border-color: #d9d9d9;
-    border-style: solid;
-
-    border-top-right-radius: 30px;                  /* BORDER RADIUS */
-    border-bottom-right-radius: 30px;               /* BORDER RADIUS */
-
-    display: flex;
-    justify-content: center;
 }
 
-
 /* CSS de la ligne pour Info */
-
 /* prop. Flexbox de cette ligne: icone i + texte pour info */
 
 #pourInfo
@@ -366,13 +248,10 @@ button
     border-width: thin;
     border-color: #dedede;
     border-radius: 50%; 
-    
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-right: 0.5%;
-
 }
 
 #pourInfoPix
@@ -380,135 +259,104 @@ button
     width: 15%;
 }
 
-
-
 /* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
 /* FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN */
 
 
 /* CSS de la section des photos des hébergements - SECTION SUPERIEURE */
-
-#sectionSuperieure
+#sectionSuperieure                  /* NI HAUTEUR NI LARGEUR */
 {
-
     display: flex;
-
     margin-left: 3.5%;              /* MARGE MARGE */
     margin-right: 3.5%;             /* MARGE MARGE */
 }
 
-#blocGauche
+#blocGauche                         /*PAS DE HAUTEUR */
 {
-    width: 61%;
-    /*height: 626px; */
+    width: 61%;                     /*LARGEUR */
     
     border-style: solid;
     border-color: #f2f2f2;
-    border-radius: 3%;                        /* BORDER RADIUS */
-
-
-    margin-right: 3%;                   /* MARGE MARGE */
-    
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 4%;                   /*MARGE INTERIEURE */
-    padding-right: 2.5%;                  /*MARGE INTERIEURE */
-
+    border-radius: 10px;                        /* BORDER RADIUS */
     background-color: #f2f2f2;
 
+    margin-right: 3%;                   /* MARGE MARGE EXTERIEURE */
+    padding-top: 1%;                    /*MARGE INTERIEURE */
+    padding-bottom: 1%;                 /*MARGE INTERIEURE */
+    padding-left: 4%;                   /*MARGE INTERIEURE */
+    padding-right: 2.5%;                /*MARGE INTERIEURE */
 
-    display: flex;
+    display: flex;                      /* FLEXBOX */
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 #titreHebergementMarseille
 {
-    position: relative;
+    position: relative;                     /* POSITION RELATIVE */
     left: 1%;
 }
 
-#blocGaucheTop
+#blocGaucheTop                              
 {
-    height: 26%; 
-
-    width: 100%;
+    height: 26%;                            /* HAUTEUR */
+    width: 100%;                            /* LARGEUR */
 
     display: flex;
     justify-content: space-around;
-
     margin-bottom: 5%;                  /*MARGIN */
 }
 
 #blocGaucheBas
 {
+    height: 26%;                        /* HAUTEUR */
+    width: 100%;                        /* LARGEUR */
+  
     display: flex;
     justify-content: space-around; 
- 
-    height: 26%;
-
-    width: 100%;
-
     margin-bottom: 5%;                  /*MARGIN */
 }
 
 #afficherPlus
 {
-    position: relative;
+    position: relative;                 /* POSITION RELATIVE */
     left: 1%;
-
     font-weight: bold;
 }
 
 .bullePhoto
 {
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    */
-    width: 28%;
+    height: 11em;                       /* HAUTEUR */
+    width: 28%;                         /* LARGEUR */
 
-    height: 11em; 
-    /*height: 100%; */
-
-    margin-right: 3.5%;
-
-    /* margin-bottom: 2%; */                          /*MARGIN */
-
+    margin-right: 3.5%;                 /* MARGE EXTERIEURE */
     border-style: solid;
-    border-radius: 5%;                         /* BORDER RADIUS EN % */
+    border-radius: 10px;                /* BORDER RADIUS */
     border-color:#ffffff; 
-
     background-color:#ffffff;
 }
 
 .roundedPix
 {
-    border-top-left-radius: 5%;               /* BORDER RADIUS */
-    border-top-right-radius: 5%;              /* BORDER RADIUS */
-    width: 100%;
-    height: 7em;
+    height: 7em;                        /* HAUTEUR */
+    width: 100%;                        /* LARGEUR */
+    
+    border-top-left-radius: 10px;               /* BORDER RADIUS */
+    border-top-right-radius: 10px;              /* BORDER RADIUS */
 }
 
 .bulleTitreText
 {
-    font-weight: bold;
-
-    position: relative;
-    bottom: 10%;
-
     margin-left: 3%;
+    font-weight: bold;
+    position: relative;                 /* POSITION RELATIVE */       
+    bottom: 10%;
 }
 
 .bulleText
 {
-    margin-left: 1%;
-    position: relative;
+    position: relative;                 /* POSITION RELATIVE */
     bottom: 17%;
-
     margin-left: 3%;
 }
 
@@ -519,118 +367,82 @@ button
 
 .ratings
 {
-    display: flex;
-    margin-left: 1%;
-    width: 30%;
-
-    position: relative;
-    bottom: 24%;
-
+    position: relative;                 /* POSITION RELATIVE */
+    bottom: 27%;
     margin-left: 3%;
 }
 
 .starPix
 {
-    width: 1em;
-
+    width: 0.7em;                         /* LAGEUR */
 }
-
+/* FIN de la zone gauche (#blocGauche) de la sectionSuperieure */
 
 /* CSS de la zone droite de la sectionSuperieure */
 
-#blocDroit
+#blocDroit        /* PAS DE HAUTEUR */
 {
-    width: 29%;
-    /*height: 572px;*/
-
+    width: 29%;                             /* LARGEUR */
     border-style: solid;
     border-color: #f2f2f2;
-    border-radius: 4%;                          /* BORDER RADIUS */ 
-    
-    padding: 1%;
-
     background-color: #f2f2f2;
-
-    display: flex;
-
+    border-radius: 10px;                          /* BORDER RADIUS */ 
+    padding: 1%;
+ 
+    display: flex;                          /* FLEXBOX */ 
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #titrePlusIcon
 {
-    display: flex;
- 
+    display: flex;                          /* FLEXBOX */
     justify-content: space-between;
     align-items: center;
-    
-    width: 80%;
-    /* 
-    position: relative;
-    bottom: 4%;
-    */
+    width: 80%;                             /* LARGEUR */
 }
 
 #iconGraph
 {
-
     width: 1em;
 }
 
 
 .bullePicture
 {
-    display: flex;
-
+    display: flex;                          /* FLEXBOX */
     border-style: solid;
     border-color: #ffffff;
-    border-radius: 5%;
-
-    /*margin-bottom: 9%; */                     /*MARGIN */
-    height: 20%;
-    width: 80%;
-
-    background-color: #ffffff;
-
-    
-    position: relative;
+    border-radius: 10px;                    /* BORDER RADIUS */
+    height: 20%;                            /* HAUTEUR */
+    width: 80%;                             /* LARGEUR */
+    background-color: #ffffff;  
+    position: relative;                     /* POSITION RELATIVE */
     bottom: 4%;
-    
 }
 
 .leftRoundPix
 {
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
-
-    width: 40%;
-    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;                             /* LARGEUR */
+    height: 100%;                           /* HAUTEUR */
 }
 
 .descriptionPhoto
 {
     margin-left: 1%;
-
-    width: 60%;
-    height: 100%;
-    /*
-    display: flex;
-    flex-direction: column;
-
-    justify-content: flex-start;
-    */
+    width: 60%;                             /* LARGEUR */
+    height: 100%;                           /* HAUTEUR */
 }
 
 .titreTextPhoto
 {
     font-weight: bold;
-    height: 10%;
-
-    position: relative;
+    height: 10%;                            /* HAUTEUR */
+    position: relative;                     /* POSITION RELATIVE */
     bottom: 9%;
-
     margin-left: 8%;
 }
 
@@ -641,58 +453,24 @@ button
 
 .textPhoto
 {
-    height: 10%;
-
-    position: relative;
+    height: 10%;                            /* HAUTEUR */
+    position: relative;                     /* POSITION RELATIVE */
     top: 4%;
-
     margin-left: 8%;
 }
 
 .ratingsDroit
 {
-    height: 10%;  
-    position: relative;
+    position: relative;                     /* POSITION RELATIVE */
     top: 15%;  
-
     margin-left: 8%;
 }
 
-
-
 .starPixDroit
 {
-    width: 7%;
-    height: 100%;
+    width: 7%;                              /* LARGEUR */
+    height: 100%;                           /* HAUTEUR */
 }
-
-/*
-
-.textPhoto
-{
-    
-    position: relative;
-    bottom: 10%;
-    
-}
-*/
-
-/*
-#ratingsRightMiddle
-{
-    position: relative;
-    bottom: 16%;
-}
-*/
-/*
-#ratingsRightBottom
-{
-    position: relative;
-    bottom: 16%;
-}
-*/
-
-
 
 /* FIN FIN FIN FIN CSS de la section des photos des hébergements - SECTION SUPERIEURE FIN FIN FIN FIN FIN FIN */
 
@@ -701,128 +479,107 @@ button
     margin-left: 3.5%;
 }
 
-
 /* CSS de la section inferieure */
 
 #sectionInferieure
 {
-
-    display: flex;
+    display: flex;                          /* FLEXBOX */
     justify-content: space-between;
-
     margin-left: 3.5%;
     margin-right: 3.5%;
     margin-bottom: 3.5%;
-
     font-weight: bold;
-
 }
 
 .blocActivite   
 {
-    display: flex;
+    display: flex;                          /* FLEXBOX */
     flex-direction: column;
     justify-content: space-between;
-
-    width: 22%;
-    height: 28em;
-
+    width: 22%;                             /* LARGEUR */
+    height: 28em;                           /* HAUTEUR */    
 }
 
 #bullePix1, #bullePix2, #bullePix3, #bullePix4, #bullePix5, #bullePix6
 {
-    /*display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between; */
-
-    border-radius: 15px;
-
+    border-radius: 15px;                    /* BORDER RADIUS */
     box-shadow: 0px 3px 0px #f3f3f3;
-
-    width: 100%;
-
+    width: 100%;                            /* LARGEUR */
 }
 
-#bullePix1                                                 /*BIG PIX */                        
+#bullePix1                                   /*BIG PIX */                        
 {
-    height: 100%;                                         
+    height: 100%;                            /* HAUTEUR */             
 }
 
-#pixInf1                                                /*BIG PIX */      
+#pixInf1                                     /*BIG PIX */      
 {
-    height: 88%;
+    height: 88%;                             /* HAUTEUR */
 }
-
-/* WORK IN PROGRESS    WORK IN PROGRESS   WORK IN PROGRESS  */
 
 #bullePix2                                  
 {
-    height: 53%;
-    
+    height: 53%;                            /* HAUTEUR */ 
 }
 
 #pixInf2
 {
-    height: 75%;
+    height: 75%;                            /* HAUTEUR */
 }
 
 #bullePix3
-{
-    height: 42%;
+{       
+    height: 42%;                            /* HAUTEUR */
 }
 
 #pixInf3
 {
-    height: 71%;
+    height: 71%;                            /* HAUTEUR */
 }
 
 
-#bullePix4                                              /*BIG PIX */  
+#bullePix4                                  /*BIG PIX */  
 {
-    height: 100%;
+    height: 100%;                           /* HAUTEUR */
 }
 
-#pixInf4                                               /*BIG PIX */                         
+#pixInf4                                    /*BIG PIX */                         
 {
-    height: 88%;
+    height: 88%;                            /* HAUTEUR */
 }
 
-#bullePix5                                      /*PIX 50% */
+#bullePix5                                  /*PIX 50% */
 {
-    height: 48%;
+    height: 48%;                            /* HAUTEUR */
     
 }
 
-#pixInf5                                            /*PIX 50% */
+#pixInf5                                    /*PIX 50% */
 {
-    height: 75%;
+    height: 75%;                            /* HAUTEUR */
 }
 
-#bullePix6
+#bullePix6                                  /* PIX 50% */
 {
-    height: 48%;
+    height: 48%;                            /* HAUTEUR */
 }
 
-#pixInf6                                            /*PIX 50% */
+#pixInf6                                    /*PIX 50% */
 {
-    height: 75%;
+    height: 75%;                            /* HAUTEUR */
 }
 
 
 .pixInferieures
 {
-    border-top-left-radius: 6%;
+    border-top-left-radius: 6%;             /* BORDER RADIUS */
     border-top-right-radius: 6%;
-
-    width: 100%;
-}
+    width: 100%;                            /* LARGEUR */
+}   
 
 .pixDescrip
 {
-    /*height: 2%; */
-    display: flex; 
+    display: flex;                          /* FLEXBOX */
     align-items: center;
     padding-left: 5%;
 }
@@ -836,20 +593,15 @@ footer
     padding-left: 3.5%;
     padding-right: 3.5%;
     background-color: #f2f2f2;
-
-    display: flex;
-    /*justify-content: space-between; */
+    display: flex;                          /*  FLEXBOX */
 }
-
 
 .articleFooter
 {
-
     margin-right: 15%;
-
 }
 
 footer a:hover
 {
-    font-style: italic;   /* A VERIFIER DANS LE SCENARIO  */
+    font-style: italic; 
 }

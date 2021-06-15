@@ -11,7 +11,7 @@
     font-family: Raleway, Courier, monospace, Arial;
 }
 
-/* flexbox et CSS de la zone d'entête */
+/* HEADER  */
 
 
 /* Le header va dispatcher le logo Reservia à gauche et le bouton s'inscrire sur la droite sur la même ligne
@@ -19,103 +19,84 @@ sur la ligne en dessous viendront hébergement/Activités */
 
 header
 {
-    display: flex;
-
+    display: flex;                          /* FLEXBOX */
     flex-wrap: wrap;
 }
 
-
-
-.element:nth-child(1)
+.element:nth-child(1)                       /* LE LOGO RESERVIA est prioritaire 1 sur la gauche */
 {
-    display: flex;
-
-    justify-content: flex-start;
-
     order: 1;
+    width: 48%;                             /* LARGEUR */
 
-    width: 48%;
+    display: flex;                          /* FLEXBOX */
+    justify-content: flex-start;
 }
 
 #reserviaLogo
 {
-    height: 3em;
+    height: 3em;                            /* LARGEUR */
 }
 
-.element:nth-child(2)
+.element:nth-child(2)                       /* la rubrique Hebergements en prioritaire 3 en bas/gauche */
 {
-
     order: 3;
-    
     width: 48%;
     margin-top: 1em;
 
-    display: flex;
+    display: flex;                          /* FLEXBOX */
     justify-content: center;
 
-    position: relative;
-    left: 5%;
-    
+    position: relative;                     /* POSITION RELATIVE */
+    left: 5%;    
 }
 
 
-.element:nth-child(3)
+.element:nth-child(3)                       /* la rubrique Activites en prioritaire 4 en bas/droite */
 {
-
     order: 4;
-    
     width: 48%;
     margin-top: 1em;
     
-    display: flex;
+    display: flex;                           /* FLEXBOX */
     justify-content: center;
-
 }
 
-.element:nth-child(4)
+.element:nth-child(4)                       /* la rubrique S'inscrire en prioritaire 2 en haut/droite */
 {
     order: 2;
     width: 48%;
 
-    display: flex;
+    display: flex;                          /* FLEXBOX */
     justify-content: flex-end;
-    /*align-items: center; */
 }
 
-.lienMenu
+.lienMenu                                   /* propriétés des liens Hébergements et Activités */
 {
     border-color: #f2f2f2;
     border-bottom-style: solid;
     padding-bottom: 4%;
 }
 
-.lienMenu:hover
+.lienMenu:hover                             /* propriétés des liens Hébergements et Activités en survol souris */
 {
     color: #3081fd;
     border-bottom-style: solid;
     border-color: #3081fd;
     padding-bottom: 4%;
-
-    
 }
-
 
 #boutonSinscrire
 {
     color: #3081fd;
 }
 
-
-/* flexbox de la zone d'entête FIN FIN FIN CSS de la zone d'entête FIN FIN FIN*/
+/* FIN DU HEADER */
 
 /* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
 
-
-
 #sectionFiltre
 {
-    margin-left: 1.5%;
-  
+    margin-left: 1.5%;  
 }
 
 #titreFiltre
@@ -129,7 +110,7 @@ header
 }
 
 /* CSS de la zone de texte: recherche ville et bouton submit associé  */
-input[type="submit"], input[type="text"] 
+input[type="submit"], input[type="search"] 
 {
 	background: none;
 	color: inherit;
@@ -145,16 +126,12 @@ input[type="submit"], input[type="text"]
 #rechercheVille
 {
     display: flex;
-
     align-items: center;
-
     margin-left: 2%;
     margin-right: 2%;
-    width: 100%;
-
-    height: 2.5em;
-
-    border-radius: 20%;
+    width: 90%;                        /* LARGEUR */
+    height: 2.5em;                      /* HAUTEUR */
+    border-radius: 10px;                /* BORDER RADIUS */
 }
 
 /* CSS de la zone icone */    
@@ -162,64 +139,60 @@ input[type="submit"], input[type="text"]
 #pointe
 {
     background-color: #f2f2f2;
-    width: 12%;
-
-    height: 100%;
-
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
-
-    display: flex;
+    width: 12%;                         /* LARGEUR */
+    height: 100%;                       /* HAUTEUR */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;                      /* FLEXBOX */
     justify-content: center;
     align-items: center;
 }
 
 #pointePix
 {
-    width: 1em;
+    width: 1em;                         /* LARGEUR */
 }
 
 /* CSS de la zone de texte */
 
+
+#formVille
+{
+    display: flex;
+    width: 85%;
+    height: 100%;
+}
+
 #laVille
 {
-    width: 70%;
-
-    height: 100%;
-
+    width: 75%;                         /* LARGEUR */ 
+    height: 100%;                       /* HAUTEUR */
+    padding-left: 1em;
     font-weight: bold;
-
-    display: flex;
+    display: flex;                      /* FLEXBOX */
     justify-content: center; 
     align-items: center;
-    /*padding-left: 5%; */
-
-    /* text-align: center; */
  }
 
 /* CSS de la zone du bouton submit */
 
-#valid
+#labelLoupeValid
 {
-
     background-color: #0065fc;
-
     color: #ffffff;
-
     font-weight: bold;
-
-    width: 12%;
-
-    height: 100%;
-
-    border-radius: 20%;
-
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 25%;                         /* LARGEUR */
+    height: 100%;                       /* HAUTEUR */   
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    background-image: url("fontawesome/svgs/solid/search.svg");
-    
+#iconLoupe
+{
+    width: 1em;
 }
 
 #textValid
@@ -227,23 +200,21 @@ input[type="submit"], input[type="text"]
     display: none;
 }
 
-
+/* FIN DU BOUTON RECHERCHE PAR VILLE */
 
 /* CSS de la ligne de filtes : Eco, Famil., Romantiq., Animaux */
 
 #filtre
 {
-    display: flex;
-    
+    display: flex;                          /* FLEXBOX */
     flex-wrap: wrap;
     font-weight: bold;
-
 }
 
 /* CSS du texte Filtres: */
 #filtresText
 {
-    display: flex;
+    display: flex;                          /* FLEXBOX */
     align-items: center; 
     width: 100%;
     font-size: 1.2em;
@@ -251,75 +222,24 @@ input[type="submit"], input[type="text"]
 
 /* CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
 
+.iconBlock
+{
+    background-color: #deebff;
+    border-style: solid;
+    border-width: thick;
+    border-color: #deebff;
+    display: flex;                         /* FLEXBOX */
+    justify-content: center;
+    width: 2em;                            /* LARGEUR */ 
+    height: 2em;                           /* HAUTEUR */
+    border-radius: 50%;    
+    margin-bottom: 1em;
+    z-index: 2;
+}
+
 .iconPix
 {
-    width: 1.2em;
-}
-
-#iconEco
-{
-    background-color: #deebff;
-    border-style: solid;
-    border-width: thick;
-    border-color: #deebff;
-
-    display: flex;
-    justify-content: center;
-
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;  
-    
-    
-}
-
-#iconFamille
-{
-    background-color: #deebff;
-    border-style: solid;
-    border-width: thick;
-    border-color: #deebff;
-    
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-
-    
-    
-}
-
-#iconRomantique
-{
-    background-color: #deebff;
-    border-style: solid;
-    border-width: thick;
-    border-color: #deebff;
-
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-}
-
-#iconAnimaux
-{
-    background-color: #deebff;
-    border-style: solid;
-    border-width: thick;
-    border-color: #deebff;
-     
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-
+    width: 35%;
 }
 
 /* propriétés générales CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
@@ -332,93 +252,46 @@ button
 	
 }
 
-/* propriétés CSS individuelles des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
-#boutonEco
+.boutonBlock
 {
     border-color: #d9d9d9;
     border-style: solid;
     border-left-style: none;
-
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     display: flex;
     justify-content: center;
-
-    width: 38%;
-    
-    
     position: relative;
     right: 6%;
+    font-size: 0.8em;
+    margin-bottom: 1em;
 
-    font-size: 0.9em;
+    height: 2.8em;
+    z-index: 1;
 
-    padding-left: 2%;
+}
+
+/* propriétés CSS individuelles des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
+#boutonEco
+{
+    width: 40%;
+    padding-left: 1%; 
 }
 
 #boutonFamille
 {
-    
-    border-color: #d9d9d9;
-    border-style: solid;
-    border-left-style: none;
-    
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-
-    display: flex;
-    justify-content: center;
-
-    width: 30%;
-
-    position: relative;
-    right: 6%;
-
-    font-size: 0.9em;
+    width: 29%;   
 }
 
 #boutonRomantique
 {
-    
-    border-color: #d9d9d9;
-    border-style: solid;
-    border-left-style: none;
-
-
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-
     width: 42%;
-
     margin-right: 40%;
-    
-    display: flex;
-    justify-content: center;
-
-    position: relative;
-    right: 6%;
-
-    font-size: 0.9em;
 }
 
 #boutonAnimaux
 {
-    border-color: #d9d9d9;
-    border-style: solid;
-    border-left-style: none;
-
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-
-    display: flex;
-    justify-content: center;
-
-    width: 52%;
-
-    position: relative;
-    right: 6%;
-
-    font-size: 0.9em;
+    width: 52%;   
 }
 
 
@@ -429,7 +302,6 @@ button
 #pourInfo
 {
     display: flex;
-
     align-items: baseline;    
 }
 
@@ -441,12 +313,9 @@ button
     border-width: thin;
     border-color: #dedede;
     border-radius: 50%; 
-
     display: flex;
     justify-content: center;
-    
     margin-right: 0.5em;   
-     
     position: relative;
     top: 0.1em;
 }
@@ -470,16 +339,13 @@ button
 
 #sectionSuperieure
 {
-
     display: flex;
-    flex-direction: column-reverse;
-    
+    flex-direction: column-reverse;   
 }
 
 #blocGauche
 {
-    width: 100%;
-        
+    width: 100%;    
 }
 
 #titreHebergementMarseille
@@ -509,25 +375,19 @@ button
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
     height: 17em;
     width: 80%;
-    
     border-style: solid;
     border-radius: 5%;
     border-color:#ffffff; 
-
     background-color:#ffffff;
-
     box-shadow: 0px 3px 0px #f3f3f3;
-
     margin-bottom: 5%;
 }
 
 .starPix
 {
     width: 1em;
-    
 }
 
 .starPixDroit
@@ -539,9 +399,7 @@ button
 {
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
-
     width: 100%;
-
     height: 65%;
 }
 
@@ -648,10 +506,10 @@ button
 
 
 
-#ratingsRightMiddle
+#ratingsDroit
 {
     position: relative;
-    bottom: 10%;
+    top: 20%;
 }
 
 

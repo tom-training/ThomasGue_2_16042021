@@ -5,35 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px) and (max-width: 1600px)" href="styles.css"/> 
-    
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 1024px)" href="petite_resolution.css"/>
-    
     <title>Reservia - votre agence de voyage en ligne</title>
-    
 </head>
 
 <body>
+
+    <!-- BARRE DU HAUT ICON RESERVIA et rubriques HEBERGEMENT/ACTIVITES/ S'INSCRIRE  -->
     <header>
 
-        <div class="element">
-            <img id="reserviaLogo" src="images/Reservia@3x.png"/>       
-        </div>
+        <div class="element"> <img id="reserviaLogo" src="images/Reservia@3x.png"/> </div>
 
-        <div class="element lienMenu">    
-            <a> Hébergements </a>
-        </div>
+        <div class="element lienMenu"> <a> Hébergements </a> </div>
 
-        <div class="element lienMenu">
-            <a> Activités </a>
-        </div> 
+        <div class="element lienMenu"> <a> Activités </a> </div> 
         
-        <div class="element">
-            <button type="button" id="boutonSinscrire"> S'inscrire </button> 
-        </div>    
+        <div class="element"> <button type="button" id="boutonSinscrire"> S'inscrire </button> </div>    
 
     </header>
+
+    <!-- BOUTON DE RECHERCHE PAR VILLE ET FILTRES PAR CATEGORIES  -->
 
     <section id= "sectionFiltre">
 
@@ -43,119 +35,66 @@
 
         <article id="rechercheVille"> 
 
-            <div id="pointe"> 
-                
-                <img src="fontawesome/svgs/solid/map-marker-alt.svg" id="pointePix"/> 
-
-            </div>    
+            <div id="pointe"> <img src="fontawesome/svgs/solid/map-marker-alt.svg" id="pointePix"/> </div>    
 
             <form id=formVille>
-
-                <p id="laVille"> 
-                    <input type="text" value="Marseille, France"/>
-                </p>
-    
-                <p id="valid"> 
-                    <input type="submit" value="Rechercher" id="textValid"/>
-                    <input type="submit" value="" id="loupeValid"/>
-                </p>  
-
-            </form>
             
+                <input type="search" placeholder="Marseille, France" id="laVille"/>       
+    
+                <input type="submit" value="Rechercher" id="textValid"/>
 
-        </article>
+                <input type="submit" value="" id="loupeValid"/>
+                <label for="loupeValid" id="labelLoupeValid"> <img src="fontawesome/svgs/solid/search.svg" id="iconLoupe"/></label>
+            
+            </form>           
+
+        </article>  <!-- FIN du bouton de recherche par ville -->
+
+        <!-- LA BARRE DE FILTRES ECO /FAM / ROMANTIQ /ANIMAUX AUTO -->        
 
         <article id="filtre">
 
-            <p id="filtresText" class="elements elements1"> Filtres </p>
+            <p id="filtresText"> Filtres </p>
 
+            <!-- FILTRE ECO-->
             
-
-            <p id="iconEco" class="elements elements2">
-                
-                <img src="fontawesome/svgs/solid/money-bill-wave.svg" class="iconPix"/>
-
-            </p>
+            <div class="iconBlock"> <img src="fontawesome/svgs/solid/money-bill-wave.svg" class="iconPix"/> </div>
         
+            <div id="boutonEco" class="boutonBlock"> <button> Economique </button> </div>  
             
-            <p id="boutonEco" class="elements elements3">
-                <button> Economique </button> 
-            </p>
-                
-            
+            <!-- FILTRE FAMILLE -->
 
-            
+            <div class="iconBlock"> <img src="fontawesome/svgs/solid/child.svg" class="iconPix"/> </div>
                 
-            <p id= "iconFamille" class="elements elements4">
-                
-                <img src="fontawesome/svgs/solid/child.svg" class="iconPix"/> 
+            <div id= "boutonFamille" class="boutonBlock"> <button> Familial </button> </div>
 
-            </p>
-                
-            <p id= "boutonFamille" class="elements elements5">
-
-                <button> Familial </button>
-            
-            </p>
+            <!-- FILTRE ROMANTIQUE -->
                      
+            <div class= "iconBlock"> <img src="fontawesome/svgs/solid/heart.svg" class="iconPix"/> </div>    
             
+            <div id="boutonRomantique" class= "boutonBlock"> <button> Romantique </button> </div>
 
-            
-
-            <p id="iconRomantique" class= "elements elements6"> 
-            
-                <img src="fontawesome/svgs/solid/heart.svg" class="iconPix"/>
-
-            </p>    
+            <!-- FILTRE ANIMAUX AUTO -->
                 
-            
-            <p id="boutonRomantique" class= "elements elements7">
-                <button> Romantique </button>
-            </p>
-                
-
-            
-
-            
-
-            <p id= "iconAnimaux" class= "elements elements8">
-
-                <img src="fontawesome/svgs/solid/dog.svg" class="iconPix"/> 
-
-            </p>
-            
+            <div class= "iconBlock"> <img src="fontawesome/svgs/solid/dog.svg" class="iconPix"/> </div>
         
-            <p id= "boutonAnimaux" class= "elements elements9">
-                <button> Animaux autorisés </button>
-            </p>
-            
+            <div id= "boutonAnimaux" class= "boutonBlock"> <button> Animaux autorisés </button> </div>
                 
-        </article>
+        </article>  <!-- FIN de #filtre -->
+
+        <!-- LIGNE D'INFORMATION -->
 
         <article id="pourInfo">
 
-            <p id="iPourInfo"> 
-                
-                <img src="fontawesome/svgs/solid/info.svg" id="pourInfoPix"/>
+            <div id="iPourInfo"> <img src="fontawesome/svgs/solid/info.svg" id="pourInfoPix"/> </div>    
 
-            </p>    
-
-            <p id="textPourInfo"> 
-                Plus de 500 logements sont disponible dans cette ville
-            </p>
-
-
+            <p id="textPourInfo"> Plus de 500 logements sont disponible dans cette ville </p>
 
         </article>
 
-        
-
-       
-
-    </section>
+    </section>   <!-- FIN DE LA #sectionFiltre -->
 
     <!-- FiN de la zone de filtre -->
-
 
     <!--  Section des photos des hébergements - SECTION SUPERIEURE -->
 
@@ -169,213 +108,183 @@
                 <div class="bullePhoto">
                     <img src="images/hosting/photo1.jpg" class="roundedPix"/>
 
-                    <p class="bulleTitreText">
-                        Auberge la Cannebière
-                    </p>  
+                    <p class="bulleTitreText"> Auberge la Cannebière </p>  
 
-                    <p class="bulleText">
-                        Nuit à partir de <span class="bulleTextBold"> 25€ </span> 
-                    </p>
+                    <p class="bulleText"> Nuit à partir de <span class="bulleTextBold"> 25€ </span> </p>
 
-                    <p class="ratings"> 
+                    <div class="ratings"> 
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
-                    </p>
-                    
+                    </div> 
                 </div>
 
                 <div class="bullePhoto">
                     <img src="images/hosting/photo2.jpg" class="roundedPix"/>
                     
-                    <p class="bulleTitreText">
-                        Hôtel du port 
-                    </p>
+                    <p class="bulleTitreText"> Hôtel du port </p>
                     
-                    <p class="bulleText">
-                        Nuit à partir de <span class="bulleTextBold"> 52€ </span>
-                    </p>
+                    <p class="bulleText"> Nuit à partir de <span class="bulleTextBold"> 52€ </span> </p>
 
-                    <p class="ratings"> 
+                    <div class="ratings"> 
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
-                    </p>
-
-
+                    </div>
                 </div>
 
                 <div class="bullePhoto">
                     <img src="images/hosting/photo3.jpg" class="roundedPix" />
 
-                    <p class="bulleTitreText">
-                        Hôtel Les mouettes
-                    </p>  
+                    <p class="bulleTitreText"> Hôtel Les mouettes </p>  
 
-                    <p class="bulleText">
-                        Nuit à partir de <span class="bulleTextBold"> 76€ </span>
-                    </p>
+                    <p class="bulleText"> Nuit à partir de <span class="bulleTextBold"> 76€ </span> </p>
 
-                    <p class="ratings"> 
+                    <div class="ratings"> 
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
-                    </p>
+                    </div>
                 </div>
 
-            </div>
+            </div>   <!-- FIN DU #blocGaucheTop -->
+
             <div id="blocGaucheBas">
                 <div class="bullePhoto">
                     <img src="images/hosting/photo4.jpg" class="roundedPix"/>
 
-                    <p class="bulleTitreText">
-                        Hôtel de la mer
-                    </p>  
+                    <p class="bulleTitreText"> Hôtel de la mer </p>  
 
-                    <p class="bulleText">
-                        Nuit à partir de <span class="bulleTextBold"> 46€ </span>
-                    </p>
-                    <p class="ratings"> 
+                    <p class="bulleText"> Nuit à partir de <span class="bulleTextBold"> 46€ </span> </p>
+
+                    <div class="ratings"> 
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
-                    </p>
+                    </div>
                 </div>
 
                 <div class="bullePhoto">
                     <img src="images/hosting/photo5.jpg" class="roundedPix"/>
                     
-                    <p class="bulleTitreText">
-                        Auberge Le Panier
-                    </p>  
+                    <p class="bulleTitreText"> Auberge Le Panier </p>  
 
-                    <p class="bulleText">
-                        Nuit à partir de <span class="bulleTextBold"> 23€ </span>
-                    </p>
+                    <p class="bulleText"> Nuit à partir de <span class="bulleTextBold"> 23€ </span> </p>
 
-                    <p class="ratings"> 
+                    <div class="ratings"> 
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix"/>
                         <img src="fontawesome/svgs/solid/star-grey.svg" class="starPix"/>
-                    </p>
+                    </div>
                 </div>
 
                 <div class="bullePhoto">
                     <img src="images/hosting/photo6.jpg" class="roundedPix"/>
 
-                    <p class="bulleTitreText">
-                        Hôtel chez Amina
-                    </p>
+                    <p class="bulleTitreText"> Hôtel chez Amina </p>
                     
-                    <p class="bulleText">
-                        Nuit à partir de <span class="bulleTextBold"> 96€ </span>
-                    </p>
+                    <p class="bulleText"> Nuit à partir de <span class="bulleTextBold"> 96€ </span> </p>
 
-                    <p class="ratings"> 
+                    <div class="ratings"> 
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
                         <img src="fontawesome/svgs/solid/star.svg" class="starPix" />
-                    </p>
+                    </div>
                 </div>
-            </div>
+            </div>   <!-- FIN du #blocGaucheBas -->
+
             <p id="afficherPlus"> Afficher plus </p>
-        </article>
+            
+        </article>  <!-- FIN de #blocGauche -->
 
         <article id="blocDroit">
+
             <div id="titrePlusIcon"> 
                 <h3>Les plus populaires</h3>
                 <p><img src="fontawesome/svgs/solid/chart-line.svg" id="iconGraph"/></p>
             </div>
 
             <div class="bullePicture">
+
                 <img src="images/hosting/photo7.jpg" class="leftRoundPix"/>
                 
                 <div class="descriptionPhoto">
-                    <p class="titreTextPhoto"> 
-                        Hôtel le soleil du matin
-                    </p>
 
-                    <p class="textPhoto">
-                        Nuit à partir de <span class="textPictureGras"> 128€</span>
-                    </p>
+                    <p class="titreTextPhoto"> Hôtel le soleil du matin </p>
 
-                    <p class="ratingsDroit"> 
-                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
-                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
-                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
-                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
-                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
-                    </p>
+                    <p class="textPhoto"> Nuit à partir de <span class="textPictureGras"> 128€ </span> </p>
 
-                </div>
+                    <div class="ratingsDroit"> 
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                        <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
+                    </div>
+
+                </div>  <!-- FIN de la description du 1er Hotel du bloc droit -->
                     
-            </div>
+            </div>   <!-- FIN DE LA 1ere .bullePicture de droite -->
 
             <div class="bullePicture">
+
                 <img src="images/hosting/photo8.jpg" class="leftRoundPix"/>
 
                 <div class="descriptionPhoto">
-                    <p class="titreTextPhoto"> 
-                        Au coeur de l'eau Chambre d'hôtes
-                    </p>
 
-                    <p class="textPhoto">
-                        Nuit à partir de <span class="textPictureGras"> 71€</span>
-                    </p>
+                    <p class="titreTextPhoto"> Au coeur de l'eau Chambre d'hôtes </p>
 
-                    <p class="ratingsDroit"> 
+                    <p class="textPhoto"> Nuit à partir de <span class="textPictureGras"> 71€</span> </p>
+
+                    <div class="ratingsDroit"> 
                         <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
                         <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit"/>
                         <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
                         <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
                         <img src="fontawesome/svgs/solid/star-grey.svg" class="starPixDroit" />
-                    </p>
-                </div>    
+                    </div>
 
-            </div>
+                </div>      <!-- FIN de la description du 2eme Hotel du bloc droit -->
+
+            </div>          <!-- FIN DE LA 2eme .bullePicture de droite -->
 
             <div class="bullePicture">
+
                 <img src="images/hosting/photo9.jpg" class="leftRoundPix"/>
                 
                 <div class="descriptionPhoto">
-                    <p class="titreTextPhoto"> 
-                        Hôtel tout bleu et Blanc </p>
-                    </p>
 
-                    <p class="textPhoto"> 
-                        Nuit à partir de <span class="textPictureGras"> 68€</span>
-                    </p>
+                    <p class="titreTextPhoto"> Hôtel tout bleu et Blanc </p>
 
-                    <p class="ratingsDroit"> 
+                    <p class="textPhoto"> Nuit à partir de <span class="textPictureGras"> 68€</span> </p>
+
+                    <div class="ratingsDroit"> 
                         <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
                         <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
                         <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
                         <img src="fontawesome/svgs/solid/star.svg" class="starPixDroit" />
                         <img src="fontawesome/svgs/solid/star-grey.svg" class="starPixDroit" />
-                    </p>
+                    </div>
 
-                </div>
+                </div>  <!-- FIN de la description du 3eme Hotel du bloc droit -->
 
-            </div>
+            </div>      <!-- FIN DE LA 3eme .bullePicture de droite -->
       
+        </article>  <!-- FIN de #blocDroit -->
 
-        </article>
-
-    </section>   
-
-    
+    </section>   <!-- FIN de la #sectionSuperieure -->
 
 <!-- FIN FIN FIN Section des photos des hébergements - SECTION SUPERIEURE FIN FIN FIN FIN FIN -->
 
@@ -387,139 +296,87 @@
 
             <div id="bullePix1">
                 <img src="images/Activite/pix1.jpg" id="pixInf1" class="pixInferieures"/>
-                <p class="pixDescrip">
-                    Vieux Port
-                </p>
-
+                <p class="pixDescrip"> Vieux Port </p>
             </div>
 
-        </article>
+        </article>  <!-- FIN DU BLOC 1/4 -->
 
         <article class="blocActivite">
+
             <div id="bullePix2">
                 <img src="images/Activite/pix2.jpg" id="pixInf2" class="pixInferieures"/>
-                <p class="pixDescrip">
-                    Fort de Pommègues
-                </p>
-
+                <p class="pixDescrip"> Fort de Pommègues </p>
             </div>
 
             <div id="bullePix3">
                 <img src="images/Activite/pix3.jpg" id="pixInf3" class="pixInferieures"/>
-                <p class="pixDescrip">
-                    Îles du Frioul
-                </p>
-
+                <p class="pixDescrip"> Îles du Frioul </p>
             </div>
-        </article>
+
+        </article>   <!-- FIN DU BLOC 2/4 -->
 
         <article class="blocActivite">
+
             <div id="bullePix4">
                 <img src="images/Activite/pix4.jpg" id="pixInf4" class="pixInferieures"/>
-                <p class="pixDescrip">
-                    Parc National des Calanques
-                </p>
-
+                <p class="pixDescrip"> Parc National des Calanques </p>
             </div>
-        </article>
+
+        </article>      <!-- FIN DU BLOC 3/4 -->
 
         <article class="blocActivite">
+
             <div id="bullePix5">
                 <img src="images/Activite/pix5.jpg" id="pixInf5" class="pixInferieures"/>
-                <p class="pixDescrip">
-                    Notre-Dame-de-la-Garde
-                </p>
-
+                <p class="pixDescrip"> Notre-Dame-de-la-Garde </p>
             </div>
+
             <div id="bullePix6">
                 <img src="images/Activite/pix6.jpg" id="pixInf6" class="pixInferieures"/>
-                <p class="pixDescrip">
-                    Parc Longchamp
-                </p>
-
+                <p class="pixDescrip"> Parc Longchamp </p>
             </div>
-        </article>
 
+        </article>      <!-- FIN DU BLOC 4/4 -->
 
-
-    </section>
+    </section>    <!-- FIN DE LA #sectionInferieure -->
 
     <!-- HTML du bas de page FOOTER -->
     <footer>
 
         <article class="articleFooter">
-            <h3>
-                A propos
-            </h3>
 
-            <p>
-                <a>
-                    Fonctionnalités du site
-                </a>
-            </p>
-            
-            <p>
-                <a>
-                    Conditions générales de ventes
-                </a>
-            </p>
-            
-            <p>
-                <a>
-                    Données et confidentialité
-                </a>
-            </p>
+            <h3> A propos </h3>
 
-        </article>
+            <p> <a> Fonctionnalités du site </a> </p>
+            
+            <p> <a> Conditions générales de ventes </a> </p>
+            
+            <p> <a> Données et confidentialité </a> </p>
+
+        </article>    <!-- FIN DU BLOCK Footer 1/3 -->
 
         <article class="articleFooter">
 
-            <h3>
-                Nos hébergements
-            </h3>
+            <h3> Nos hébergements </h3>
 
-            <p>
-                <a>
-                    Charte qualité
-                </a>
-            </p>
+            <p> <a> Charte qualité </a> </p>
          
-            <p>
-                <a>
-                    Soumettre votre hotel
-                </a>
-            </p>
+            <p> <a> Soumettre votre hotel </a> </p>
 
-        </article>
+        </article>    <!-- FIN DU BLOCK Footer 2/3 -->
             
             
         <article class="articleFooter">
-            <h3>
-                Assistance
-            </h3>
             
-            <p>
-                <a>
-                    Centre d'aide
-                </a>
-            </p>
+            <h3> Assistance </h3>
             
-            <p>
-                <a>
-                    Nous contacter
-                </a>
-            </p>
+            <p> <a> Centre d'aide </a> </p>
+            
+            <p> <a> Nous contacter </a> </p>
            
-        </article>
-
+        </article>     <!-- FIN DU BLOCK Footer 3/3 -->
 
     </footer>
-
-
-    
-
-
-
-   
+  
 </body>
 </html>
