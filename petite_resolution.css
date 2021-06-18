@@ -220,26 +220,30 @@ input[type="submit"], input[type="search"]
     font-size: 1.2em;
 }
 
-/* CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
+/* CSS des bulles de filtres (icone+text) Eco, fam., Romantiq., Animaux */
+
+.filtreBulle
+{  
+    display: flex;
+    margin-bottom: 1em;
+}
 
 .iconBlock
 {
     background-color: #deebff;
     border-style: solid;
-    border-width: thick;
     border-color: #deebff;
-    display: flex;                         /* FLEXBOX */
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
-    width: 2em;                            /* LARGEUR */ 
-    height: 2em;                           /* HAUTEUR */
-    border-radius: 50%;    
-    margin-bottom: 1em;
     z-index: 2;
 }
 
 .iconPix
 {
-    width: 35%;
+    width: 1em;
 }
 
 /* propriétés générales CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
@@ -256,44 +260,15 @@ button
 {
     border-color: #d9d9d9;
     border-style: solid;
-    border-left-style: none;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    display: flex;
-    justify-content: center;
+    border-width: 1px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 1.4em;
+    padding-right: 0.5em;
     position: relative;
-    right: 6%;
-    font-size: 0.8em;
-    margin-bottom: 1em;
-
-    height: 2.8em;
+    right: 1em;
     z-index: 1;
-
 }
-
-/* propriétés CSS individuelles des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
-#boutonEco
-{
-    width: 40%;
-    padding-left: 1%; 
-}
-
-#boutonFamille
-{
-    width: 29%;   
-}
-
-#boutonRomantique
-{
-    width: 42%;
-    margin-right: 40%;
-}
-
-#boutonAnimaux
-{
-    width: 52%;   
-}
-
 
 /* CSS de la ligne pour Info */
 
@@ -334,7 +309,6 @@ button
 /* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
 /* FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN FIN */
 
-
 /* CSS de la section des photos des hébergements - SECTION SUPERIEURE */
 
 #sectionSuperieure
@@ -371,162 +345,137 @@ button
 
 .bullePhoto
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 17em;
-    width: 80%;
     border-style: solid;
-    border-radius: 5%;
+    border-radius: 10%;
     border-color:#ffffff; 
     background-color:#ffffff;
     box-shadow: 0px 3px 0px #f3f3f3;
     margin-bottom: 5%;
 }
 
+.descripPhoto
+{
+    height: 3.6em;
+}
 .starPix
 {
-    width: 1em;
-}
-
-.starPixDroit
-{
-    width: 1em;
+    width: 0.8em;
 }
 
 .roundedPix
 {
-    border-top-left-radius: 11px;
-    border-top-right-radius: 11px;
-    width: 100%;
-    height: 65%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 15em;                        /* LARGEUR */
+    height: 5.25em;                     /* HAUTEUR */
 }
-
 
 .bulleTitreText
 {
-    height: 1%;
     font-weight: bold;
+    margin-left: 5%;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 1em;
 }
-
-
 
 .bulleText
 {
-   /* position: relative;
-    bottom: 10px;
-    margin-left: 1px;
-    */
-    height: 1%;
+    margin-left: 5%;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 1.5em;
 }
-
 
 .ratings
 {
-    display: flex;
-    height: 5%;  
+    margin-left: 5%;
+    position: relative;
+    bottom: 1.5em;
 }
 
-
-/* CSS de la zone droite de la sectionSuperieure */
+/* CSS de la zone au top de la sectionSuperieure sur la version mobile */
 
 #blocDroit
 {
     width: 100%;    
-
     background-color: #f2f2f2;
-
     display: flex;
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 #titrePlusIcon
 {
     display: flex;
-
-    width: 80%;
-    
+    width: 80%; 
     justify-content: space-between;
-   
+    align-items: center;
 }
 
+#iconGraph
+{
+    width: 1em;
+}
 
 .bullePicture
 {
     display: flex;
-
     border-style: solid;
     border-color: #ffffff;
     border-radius: 10px;
-
     margin-bottom: 9%;
-
-    width: 80%;
-    height: 7em;
-
+    height: 7em;                                        /* HAUTEUR */
     background-color: #ffffff;
 }
 
 .leftRoundPix
 {
-    border-top-left-radius: 11px;
-    border-bottom-left-radius: 11px;
-
-    width: 40%;
-    height: 100%;
-
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 7em;
+    width: 6.6em;
 }
 
 .descriptionPhoto
 {
-    margin-left: 2%;
-
-    /*display: flex;
-    flex-direction: column;
-
-    justify-content: flex-start;
-    */
-    width: 60%;
-
+    padding-left: 2%;
+    width: 10.5em;
     font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-
+.titreTextPhoto
+{
+    font-weight: bold;
+}
 
 .textPhoto
 {
     position: relative;
-    bottom: 10%;
+    bottom: 15%;
 }
 
-
-
-#ratingsDroit
+.ratingsDroit
 {
     position: relative;
-    top: 20%;
+    bottom: 5%; 
 }
 
+.starPixDroit
+{
+    width: 8%;
+}
+
+/* FIN DU #blocDroit qui est au top de la version Mobile */
 
 #afficherPlus
 {
     margin-left: 8%;
 }
-
-/*
-#ratingsRightBottom
-{
-    position: relative;
-    bottom: 16%;
-}
-*/
-
-
 
 /* FIN FIN FIN FIN CSS de la section des photos des hébergements - SECTION SUPERIEURE FIN FIN FIN FIN FIN FIN */
 
@@ -535,17 +484,12 @@ button
     margin-left: 8%;
 }
 
-
 /* CSS de la section inferieure */
 
 #sectionInferieure
 {
     display: flex;
     flex-direction: column;
-    /*
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    */
     font-weight: bold;
 }
 
@@ -555,25 +499,17 @@ button
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 100%;
 }
-
 
 #bullePix1, #bullePix2, #bullePix3, #bullePix4, #bullePix5, #bullePix6
 {
     display: flex;
-
     flex-direction: column;
-
     border-radius: 15px;
-
     box-shadow: 0px 3px 0px #f3f3f3;
-
     width: 80%;
-
-    height: 15em;
-
+    height: 10em;
     margin-bottom: 5%; 
 }
 
@@ -581,14 +517,13 @@ button
 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
     width: 100%;
     height: 80%;
 }
 
 .pixDescrip
 {
-    height: 20%;
+    height: 10%;
     display: flex;
     align-items: center;
     padding-left: 5%;
@@ -600,25 +535,13 @@ button
 
 footer
 {
-    /*padding-left: 1.5%; */
     background-color: #f2f2f2;
-
     display: flex;
     flex-direction: column;
-
     padding-left: 8%;
 }
 
-/*
-.articleFooter
-{
-
-    margin-right: 15%;
-
-}
-*/
-
 footer a:hover
 {
-    font-style: italic;   /* A VERIFIER DANS LE SCENARIO  */
+    font-style: italic;
 }
