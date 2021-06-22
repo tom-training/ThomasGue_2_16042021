@@ -491,6 +491,8 @@ button
     display: flex;
     flex-direction: column;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
 }
 
 .blocActivite
@@ -499,7 +501,7 @@ button
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 40%;
 }
 
 #bullePix1, #bullePix2, #bullePix3, #bullePix4, #bullePix5, #bullePix6
