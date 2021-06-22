@@ -244,6 +244,7 @@ input[type="submit"], input[type="search"]
 .iconPix
 {
     width: 1em;
+    color: #0065fc;
 }
 
 /* propriétés générales CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
@@ -303,6 +304,7 @@ button
 #pourInfoPix
 {
     width: 0.2em;
+    color: #0065fc;
 }
 
 
@@ -360,6 +362,12 @@ button
 .starPix
 {
     width: 0.8em;
+    color: #0065fc;
+}
+
+.starPixGrey
+{
+    color: #d9d9d9;
 }
 
 .roundedPix
@@ -468,6 +476,12 @@ button
 .starPixDroit
 {
     width: 8%;
+    color: #0065fc;
+}
+
+.starPixDroitGrey
+{
+    color: #d9d9d9;
 }
 
 /* FIN DU #blocDroit qui est au top de la version Mobile */

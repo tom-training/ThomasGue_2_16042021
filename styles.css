@@ -184,13 +184,14 @@ input[type="submit"], input[type="search"]
     width: 3em;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     z-index: 2;
 }
 
 .iconPix
 {
-    width: 1.5em;
+    /*width: 1.5em; */
+    color: #0065fc;
 }
 
 /* CSS pour modifier le formatage par defaut des balises BUTTON */
@@ -240,6 +241,7 @@ button
 #pourInfoPix
 {
     width: 15%;
+    color: #0065fc;
 }
 
 /* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
@@ -368,6 +370,12 @@ button
 .starPix
 {
     width: 0.7em;                         /* LAGEUR */
+    color: #0065fc;
+}
+
+.starPixGrey
+{
+    color: #d9d9d9;
 }
 /* FIN de la zone gauche (#blocGauche) de la sectionSuperieure */
 
@@ -464,6 +472,12 @@ button
 {
     width: 7%;                              /* LARGEUR */
     height: 100%;                           /* HAUTEUR */
+    color: #0065fc;
+}
+
+.starPixDroitGrey
+{
+    color: #d9d9d9;
 }
 
 /* FIN FIN FIN FIN CSS de la section des photos des hébergements - SECTION SUPERIEURE FIN FIN FIN FIN FIN FIN */
