@@ -184,7 +184,8 @@ input[type="submit"], input[type="search"]
     width: 3em;
     border-radius: 50%;
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
+    align-items: center;   
     z-index: 2;
 }
 
@@ -265,7 +266,7 @@ button
     border-radius: 10px;                        /* BORDER RADIUS */
     background-color: #f2f2f2;
 
-    margin-right: 3%;                   /* MARGE MARGE EXTERIEURE */
+    margin-right: 2.7%;                   /* MARGE MARGE EXTERIEURE */
     padding-top: 1%;                    /*MARGE INTERIEURE */
     padding-bottom: 1%;                 /*MARGE INTERIEURE */
     padding-left: 4%;                   /*MARGE INTERIEURE */
@@ -311,7 +312,7 @@ button
 
 .bullePhoto
 {
-    /*height: 11em; */                      /* HAUTEUR */
+    height: 100%;                      /* HAUTEUR */
     width: 28%;                         /* LARGEUR */
 
     margin-right: 3.5%;                 /* MARGE EXTERIEURE */
@@ -325,7 +326,7 @@ button
 
 .roundedPix
 {
-    height: 7em;                        /* HAUTEUR */
+    height: 57%;                        /* HAUTEUR */
     width: 100%;                        /* LARGEUR */
     
     border-top-left-radius: 10px;               /* BORDER RADIUS */
@@ -334,7 +335,7 @@ button
 
 .descripPhoto 
 {
-    height: 10em;
+    height: 43%;
     font-size: 0.9em;
 }
 
@@ -342,16 +343,18 @@ button
 {
     margin-left: 3%;
     font-weight: bold;
-    
+    /*
     position: relative;                       
     bottom: 10%;
-    
+    */
 }
 
 .bulleText
 {
+    /*
     position: relative;                 
     bottom: 19%;
+    */
     margin-left: 3%;
 }
 
@@ -362,20 +365,26 @@ button
 
 .ratings
 {
+    /*
     position: relative;                 
     bottom: 30%;
+    */
     margin-left: 3%;
 }
 
 .starPix
 {
-    width: 0.7em;                         /* LAGEUR */
+    width: 0.4em;                         /* LARGEUR */
     color: #0065fc;
+    margin-right: 0.5em;
 }
 
 .starPixGrey
 {
+    width: 0.4em; 
     color: #d9d9d9;
+    margin-right: 0.5em;
+
 }
 /* FIN de la zone gauche (#blocGauche) de la sectionSuperieure */
 
@@ -409,15 +418,14 @@ button
     width: 1em;
 }
 
-
 .bullePicture
 {
     display: flex;                          /* FLEXBOX */
     border-style: solid;
     border-color: #ffffff;
     border-radius: 10px;                    /* BORDER RADIUS */
-    height: 20%;                            /* HAUTEUR */
-    width: 80%;                             /* LARGEUR */
+    height: 17%;                            /* HAUTEUR */
+    width: 82%;                             /* LARGEUR */
     background-color: #ffffff;  
     position: relative;                     /* POSITION RELATIVE */
     bottom: 4%;
@@ -443,9 +451,12 @@ button
 {
     font-weight: bold;
     height: 10%;                            /* HAUTEUR */
-    position: relative;                     /* POSITION RELATIVE */
+    /*
+    position: relative;                    
     bottom: 9%;
+    */
     margin-left: 8%;
+    margin-bottom: 2em;
 }
 
 .textPictureGras
@@ -456,28 +467,36 @@ button
 .textPhoto
 {
     height: 10%;                            /* HAUTEUR */
-    position: relative;                     /* POSITION RELATIVE */
+    /*
+    position: relative;                     
     top: 4%;
+    */
     margin-left: 8%;
+    margin-bottom: 2.5em;
 }
 
 .ratingsDroit
 {
-    position: relative;                     /* POSITION RELATIVE */
-    top: 30%;  
+    /*
+    position: relative;                    
+    top: 30%;
+    */  
     margin-left: 8%;
 }
 
 .starPixDroit
 {
-    width: 7%;                              /* LARGEUR */
+    width: 0.4em;                              /* LARGEUR */
     height: 100%;                           /* HAUTEUR */
     color: #0065fc;
+    margin-right: 0.5em;
 }
 
 .starPixDroitGrey
 {
+    width: 0.4em;
     color: #d9d9d9;
+    margin-right: 0.5em;
 }
 
 /* FIN FIN FIN FIN CSS de la section des photos des hébergements - SECTION SUPERIEURE FIN FIN FIN FIN FIN FIN */
