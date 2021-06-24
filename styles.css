@@ -184,7 +184,8 @@ input[type="submit"], input[type="search"]
     width: 3em;
     border-radius: 50%;
     display: flex;
-    justify-content: center;    
+    justify-content: center;  
+    align-items: center;  
     z-index: 2;
 }
 
@@ -266,10 +267,10 @@ button
     background-color: #f2f2f2;
 
     margin-right: 3%;                   /* MARGE MARGE EXTERIEURE */
-    padding-top: 1%;                    /*MARGE INTERIEURE */
-    padding-bottom: 1%;                 /*MARGE INTERIEURE */
-    padding-left: 4%;                   /*MARGE INTERIEURE */
-    padding-right: 2.5%;                /*MARGE INTERIEURE */
+    padding-top: 1%;                    /* MARGE INTERIEURE */
+    padding-bottom: 1%;                 /* MARGE INTERIEURE */
+    padding-left: 4%;                   /* MARGE INTERIEURE */
+    padding-right: 2.5%;                /* MARGE INTERIEURE */
 
     display: flex;                      /* FLEXBOX */
     flex-direction: column;
@@ -318,18 +319,44 @@ button
     border-style: solid;
     border-radius: 10px;                /* BORDER RADIUS */
     border-color:#ffffff; 
-    background-color:#ffffff;
-    display: flex;
-    flex-direction: column;
+    background-color:#ffffff;   
 }
 
-.roundedPix
+.roundedPixTop
 {
-    height: 7em;                        /* HAUTEUR */
+                            
     width: 100%;                        /* LARGEUR */
+    height: 114px;
+
+    object-fit: cover;
+    object-position: left top;
     
     border-top-left-radius: 10px;               /* BORDER RADIUS */
     border-top-right-radius: 10px;              /* BORDER RADIUS */
+}
+
+.roundedPixBottom
+{   
+    width: 100%;                      /* HAUTEUR */
+    height: 114px;
+    object-fit: cover;
+    object-position: left top;
+
+    border-top-left-radius: 10px;               /* BORDER RADIUS */
+    border-top-right-radius: 10px;              /* BORDER RADIUS */
+}
+
+.photoGaucheTop
+{
+    height: 57%;
+    width: 100%;
+    
+}
+
+.photoGaucheBottom
+{
+    height: 57%;
+    width: 100%;
 }
 
 .descripPhoto 
@@ -427,6 +454,11 @@ button
 {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    width: 100%;                             /* LARGEUR */
+}
+
+.photoDroit
+{
     width: 45%;                             /* LARGEUR */
     height: 100%;                           /* HAUTEUR */
 }
