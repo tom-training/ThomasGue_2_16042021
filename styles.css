@@ -329,7 +329,7 @@ button
     height: 114px;
 
     object-fit: cover;
-    object-position: left top;
+    
     
     border-top-left-radius: 10px;               /* BORDER RADIUS */
     border-top-right-radius: 10px;              /* BORDER RADIUS */
@@ -340,12 +340,13 @@ button
     width: 100%;                      /* HAUTEUR */
     height: 114px;
     object-fit: cover;
-    object-position: left top;
+    
 
     border-top-left-radius: 10px;               /* BORDER RADIUS */
     border-top-right-radius: 10px;              /* BORDER RADIUS */
 }
 
+/* 
 .photoGaucheTop
 {
     height: 57%;
@@ -358,7 +359,7 @@ button
     height: 57%;
     width: 100%;
 }
-
+*/
 .descripPhoto 
 {
     height: 10em;
@@ -454,15 +455,17 @@ button
 {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 100%;                             /* LARGEUR */
+    width: 126px;                             /* LARGEUR */
+    height: 100%;
+    object-fit: cover;
 }
-
+/*
 .photoDroit
 {
-    width: 45%;                             /* LARGEUR */
-    height: 100%;                           /* HAUTEUR */
+    width: 45%;                             
+    height: 100%;                           
 }
-
+*/
 .descriptionPhoto
 {
     margin-left: 1%;
