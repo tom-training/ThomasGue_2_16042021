@@ -184,8 +184,8 @@ input[type="submit"], input[type="search"]
     width: 3em;
     border-radius: 50%;
     display: flex;
-    justify-content: center; 
-    align-items: center;   
+    justify-content: center;  
+    align-items: center;  
     z-index: 2;
 }
 
@@ -266,11 +266,11 @@ button
     border-radius: 10px;                        /* BORDER RADIUS */
     background-color: #f2f2f2;
 
-    margin-right: 2.7%;                   /* MARGE MARGE EXTERIEURE */
-    padding-top: 1%;                    /*MARGE INTERIEURE */
-    padding-bottom: 1%;                 /*MARGE INTERIEURE */
-    padding-left: 4%;                   /*MARGE INTERIEURE */
-    padding-right: 2.5%;                /*MARGE INTERIEURE */
+    margin-right: 3%;                   /* MARGE MARGE EXTERIEURE */
+    padding-top: 1%;                    /* MARGE INTERIEURE */
+    padding-bottom: 1%;                 /* MARGE INTERIEURE */
+    padding-left: 4%;                   /* MARGE INTERIEURE */
+    padding-right: 2.5%;                /* MARGE INTERIEURE */
 
     display: flex;                      /* FLEXBOX */
     flex-direction: column;
@@ -319,20 +319,47 @@ button
     border-style: solid;
     border-radius: 10px;                /* BORDER RADIUS */
     border-color:#ffffff; 
-    background-color:#ffffff;
-    display: flex;
-    flex-direction: column;
+    background-color:#ffffff;   
 }
 
-.roundedPix
+.roundedPixTop
 {
-    height: 57%;                        /* HAUTEUR */
+                            
     width: 100%;                        /* LARGEUR */
+    height: 114px;
+
+    object-fit: cover;
+    
     
     border-top-left-radius: 10px;               /* BORDER RADIUS */
     border-top-right-radius: 10px;              /* BORDER RADIUS */
 }
 
+.roundedPixBottom
+{   
+    width: 100%;                      /* HAUTEUR */
+    height: 114px;
+    object-fit: cover;
+    
+
+    border-top-left-radius: 10px;               /* BORDER RADIUS */
+    border-top-right-radius: 10px;              /* BORDER RADIUS */
+}
+
+/* 
+.photoGaucheTop
+{
+    height: 57%;
+    width: 100%;
+    
+}
+
+.photoGaucheBottom
+{
+    height: 57%;
+    width: 100%;
+}
+*/
 .descripPhoto 
 {
     height: 43%;
@@ -435,10 +462,17 @@ button
 {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 45%;                             /* LARGEUR */
-    height: 100%;                           /* HAUTEUR */
+    width: 126px;                             /* LARGEUR */
+    height: 100%;
+    object-fit: cover;
 }
-
+/*
+.photoDroit
+{
+    width: 45%;                             
+    height: 100%;                           
+}
+*/
 .descriptionPhoto
 {
     margin-left: 1%;
