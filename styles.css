@@ -305,10 +305,8 @@ button
 
 #afficherPlus
 {
-    
     position: relative;                 
     left: 1%;
-    
     font-weight: bold;
 }
 
@@ -457,7 +455,7 @@ button
     
     
     position: relative;                     
-    bottom: 2%;
+    bottom: 6%;
     
 }
 
@@ -536,6 +534,63 @@ button
     margin-right: 0.5em;
 }
 
+
+@media screen and (min-width: 1200px) and (max-width: 1300px)
+{
+    
+    .descripPhoto 
+    {
+        font-size: 0.8em;
+    }
+
+    .descriptionPhoto
+    {
+        font-size: 0.8em;
+    }
+
+    .pixDescrip
+    {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px)
+{
+    .descripPhoto 
+    {
+        font-size: 0.6em;
+    }
+
+    .descriptionPhoto
+    {
+        font-size: 0.6em;
+    }
+
+    .pixDescrip
+    {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1099px)
+{
+    .descripPhoto 
+    {
+        font-size: 0.5em;
+    }
+    
+    .descriptionPhoto
+    {
+        font-size: 0.5em;
+    }
+
+    .pixDescrip
+    {
+        font-size: 0.7em;
+    }
+}
+
+
 /* FIN FIN FIN FIN CSS de la section des photos des hébergements - SECTION SUPERIEURE FIN FIN FIN FIN FIN FIN */
 
 #titreMilieu
@@ -573,12 +628,13 @@ button
 
 #bullePix1                                   /*BIG PIX */                        
 {
-    height: 100%;                            /* HAUTEUR */             
+    height: 100%;                            /* HAUTEUR */  
 }
 
 #pixInf1                                     /*BIG PIX */      
 {
     height: 88%;                             /* HAUTEUR */
+    object-fit: cover;
 }
 
 #bullePix2                                  
@@ -588,7 +644,8 @@ button
 
 #pixInf2
 {
-    height: 75%;                            /* HAUTEUR */
+    height: 75%;                          /* HAUTEUR */
+    object-fit: cover;
 }
 
 #bullePix3
@@ -599,6 +656,7 @@ button
 #pixInf3
 {
     height: 71%;                            /* HAUTEUR */
+    object-fit: cover;
 }
 
 
@@ -610,17 +668,18 @@ button
 #pixInf4                                    /*BIG PIX */                         
 {
     height: 88%;                            /* HAUTEUR */
+    object-fit: cover;
 }
 
 #bullePix5                                  /*PIX 50% */
 {
-    height: 48%;                            /* HAUTEUR */
-    
+    height: 48%;                            /* HAUTEUR */    
 }
 
 #pixInf5                                    /*PIX 50% */
 {
     height: 75%;                            /* HAUTEUR */
+    object-fit: cover;
 }
 
 #bullePix6                                  /* PIX 50% */
@@ -631,13 +690,14 @@ button
 #pixInf6                                    /*PIX 50% */
 {
     height: 75%;                            /* HAUTEUR */
+    object-fit: cover;
 }
 
 
 .pixInferieures
 {
-    border-top-left-radius: 6%;             /* BORDER RADIUS */
-    border-top-right-radius: 6%;
+    border-top-left-radius: 10px;               
+    border-top-right-radius: 10px;
     width: 100%;                            /* LARGEUR */
 }   
 
@@ -646,6 +706,8 @@ button
     display: flex;                          /* FLEXBOX */
     align-items: center;
     padding-left: 5%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 /* FIN FIN FIN FIN de la section inférieure   FIN FIN FIN FIN */
