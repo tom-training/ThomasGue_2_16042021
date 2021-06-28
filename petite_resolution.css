@@ -293,10 +293,6 @@ button
     justify-content: center;
     align-items: center;
     margin-right: 0.5em; 
-    /*  
-    position: relative;
-    top: 0.1em;
-    */
 }
 
 #textPourInfo
@@ -472,7 +468,6 @@ button
 {
     padding-left: 2%;
     width: 52%;
-    font-size: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
