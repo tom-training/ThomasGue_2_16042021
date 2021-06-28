@@ -27,7 +27,6 @@ header
 {
     order: 1;
     width: 48%;                             /* LARGEUR */
-
     display: flex;                          /* FLEXBOX */
     justify-content: flex-start;
 }
@@ -238,6 +237,7 @@ input[type="submit"], input[type="search"]
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 2;
 }
 
@@ -283,17 +283,20 @@ button
 
 #iPourInfo
 {
-    height: 1em;
-    width: 1em;
+    height: 2em;
+    width: 2em;
     border-style: solid;
     border-width: thin;
     border-color: #dedede;
     border-radius: 50%; 
     display: flex;
     justify-content: center;
-    margin-right: 0.5em;   
+    align-items: center;
+    margin-right: 0.5em; 
+    /*  
     position: relative;
     top: 0.1em;
+    */
 }
 
 #textPourInfo
@@ -303,7 +306,7 @@ button
 
 #pourInfoPix
 {
-    width: 0.2em;
+    width: 0.5em;
     color: #0065fc;
 }
 
@@ -326,7 +329,7 @@ button
 
 #titreHebergementMarseille
 {
-    margin-left: 8%;
+    margin-left: 1%;
 }
 
 #blocGaucheTop
@@ -348,58 +351,74 @@ button
 .bullePhoto
 {
     border-style: solid;
-    border-radius: 10%;
+    border-radius: 10px;
     border-color:#ffffff; 
     background-color:#ffffff;
     box-shadow: 0px 3px 0px #f3f3f3;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+    width: 85%;
 }
 
 .descripPhoto
 {
-    height: 3.6em;
+    height: 3.5em;
+    font-size: 0.8em;
 }
+
 .starPix
 {
-    width: 0.8em;
-    color:#0065fc
+    color:#0065fc;
+    width: 3%;
+    margin-right: 0.2em;
 }
 
 .starPixGrey
 {
-    color: #d9d9d9
+    color: #d9d9d9;
+    width: 3%;
+    margin-right: 0.2em;
 }
 
-.roundedPix
+.roundedPixTop
 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 15em;                        /* LARGEUR */
-    height: 5.25em;                     /* HAUTEUR */
+    width: 100%;                        /* LARGEUR */
+    height: 113px;                     /* HAUTEUR */
+    object-fit: cover;
 }
+
+.roundedPixBottom
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;                        /* LARGEUR */
+    height: 113px;                     /* HAUTEUR */
+    object-fit: cover;
+}
+
 
 .bulleTitreText
 {
     font-weight: bold;
-    margin-left: 5%;
-    font-size: 0.8em;
+    margin-left: 5%; 
     position: relative;
-    bottom: 1em;
+    bottom: 0.6em;
 }
 
 .bulleText
 {
     margin-left: 5%;
-    font-size: 0.8em;
     position: relative;
-    bottom: 1.5em;
+    bottom: 1.4em;
 }
 
 .ratings
 {
     margin-left: 5%;
+    margin-bottom: 2%;
     position: relative;
-    bottom: 1.5em;
+    bottom: 2.2em;
 }
 
 /* CSS de la zone au top de la sectionSuperieure sur la version mobile */
@@ -434,26 +453,30 @@ button
     border-color: #ffffff;
     border-radius: 10px;
     margin-bottom: 9%;
-    height: 7em;                                        /* HAUTEUR */
     background-color: #ffffff;
+    width: 85%;
+    height: 134px;
 }
 
 .leftRoundPix
 {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    height: 7em;
-    width: 6.6em;
+    height: auto;
+    width: 48%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .descriptionPhoto
 {
     padding-left: 2%;
-    width: 10.5em;
-    font-size: 0.8em;
+    width: 52%;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-size: 0.8em;
 }
 
 .titreTextPhoto
@@ -469,8 +492,10 @@ button
 
 .ratingsDroit
 {
+    
     position: relative;
-    bottom: 5%; 
+    top: 10%;
+     
 }
 
 .starPixDroit
@@ -481,6 +506,7 @@ button
 
 .starPixDroitGrey
 {
+    width: 8%;
     color: #d9d9d9;
 }
 

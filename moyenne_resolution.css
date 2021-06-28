@@ -238,6 +238,7 @@ input[type="submit"], input[type="search"]
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 2;
 }
 
@@ -283,14 +284,15 @@ button
 
 #iPourInfo
 {
-    height: 1em;
-    width: 1em;
+    height: 1.5em;
+    width: 1.5em;
     border-style: solid;
     border-width: thin;
     border-color: #dedede;
     border-radius: 50%; 
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-right: 0.5em;   
     position: relative;
     top: 0.1em;
