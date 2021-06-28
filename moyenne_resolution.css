@@ -350,7 +350,7 @@ button
 .bullePhoto
 {
     border-style: solid;
-    border-radius: 10%;
+    border-radius: 20px;
     border-color:#ffffff; 
     background-color:#ffffff;
     box-shadow: 0px 3px 0px #f3f3f3;
@@ -360,35 +360,35 @@ button
 
 .descripPhoto
 {
-    height: 3.5em;
+    height: 4em;
 }
 .starPix
 {
-    width: 4%;
+    width: 3%;
     color: #0065fc;
 }
 
 .starPixGrey
 {
     color: #d9d9d9;
-    width: 4%;
+    width: 3%;
 }
 
 .roundedPixTop
 {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 100%;                        /* LARGEUR */
-    height: 113px;                     /* HAUTEUR */
+    height: 250px;                     /* HAUTEUR */
     object-fit: cover;
 }
 
 .roundedPixBottom
 {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 100%;                        /* LARGEUR */
-    height: 113px;                     /* HAUTEUR */
+    height: 250px;                     /* HAUTEUR */
     object-fit: cover;
 }
 
@@ -404,14 +404,14 @@ button
 {
     margin-left: 5%;
     position: relative;
-    bottom: 1.5em;
+    bottom: 1.8em;
 }
 
 .ratings
 {
     margin-left: 5%;
     position: relative;
-    bottom: 1.5em;
+    bottom: 2.5em;
 }
 
 /* CSS de la zone au top de la sectionSuperieure sur la version mobile */
@@ -444,17 +444,17 @@ button
     display: flex;
     border-style: solid;
     border-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 9%;
-    height: 134px;                                        /* HAUTEUR */
+    height: 300px;                                        /* HAUTEUR */
     width: 85%;
     background-color: #ffffff;
 }
 
 .leftRoundPix
 {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     height: auto;
     width: 48%;
     height: 100%;
@@ -477,25 +477,24 @@ button
 
 .textPhoto
 {
-    position: relative;
-    bottom: 15%;
+    
 }
 
 .ratingsDroit
 {
-    position: relative;
-    bottom: 5%; 
+   position: relative;
+   top: 55%;
 }
 
 .starPixDroit
 {
-    width: 8%;
+    width: 4%;
     color: #0065fc;
 }
 
 .starPixDroitGrey
 {
-    width: 8%;
+    width: 4%;
     color: #d9d9d9;
 }
 
@@ -537,7 +536,8 @@ button
 {
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
+    border-radius: 20px;
+    border-radius: 20px;
     box-shadow: 0px 3px 0px #f3f3f3;
     width: 85%;
     margin-bottom: 5%; 
@@ -545,10 +545,10 @@ button
 
 .pixInferieures
 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 100%;                                        /* A CHANGER POUR LA VERSION TABLETTE */
-    height: 135px;
+    height: 250px;
     object-fit: cover;
 }
 
