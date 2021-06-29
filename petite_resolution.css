@@ -1,10 +1,6 @@
 /* Propriétés CSS communes à toute la page web */
 
-@font-face 
-{
-    font-family: 'Raleway';
-    src: url('Raleway-VariableFont_wght.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 *
 {
@@ -485,13 +481,7 @@ button
     position: relative;
     bottom: 15%;
 }
-/*
-.ratingsDroit
-{
-    position: relative;
-    top: 10%;
-}
-*/
+
 .starPixDroit
 {
     width: 8%;
