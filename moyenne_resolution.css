@@ -410,7 +410,7 @@ button
     bottom: 2.5em;
 }
 
-/* CSS de la zone au top de la sectionSuperieure sur la version mobile */
+/* CSS de la zone au top de la sectionSuperieure sur la version tablette en portrait */
 
 #blocDroit
 {
@@ -469,11 +469,6 @@ button
 .titreTextPhoto
 {
     font-weight: bold;
-}
-
-.textPhoto
-{
-    
 }
 
 .ratingsDroit
@@ -543,7 +538,7 @@ button
 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 100%;                                        /* A CHANGER POUR LA VERSION TABLETTE */
+    width: 100%;                                       
     height: 250px;
     object-fit: cover;
 }

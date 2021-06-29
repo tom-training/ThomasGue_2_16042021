@@ -187,7 +187,6 @@ input[type="submit"], input[type="search"]
 
 .iconPix
 {
-    /*width: 1.5em; */
     color: #0065fc;
 }
 
@@ -308,7 +307,7 @@ button
 
 .bullePhoto
 {
-    height: 100%;                      /* HAUTEUR */
+    height: 100%;                       /* HAUTEUR */
     width: 28%;                         /* LARGEUR */
 
     margin-right: 3.5%;                 /* MARGE EXTERIEURE */
@@ -319,22 +318,18 @@ button
 }
 
 .roundedPixTop
-{
-                            
+{                       
     width: 100%;                        /* LARGEUR */
-    height: 114px;
-
-    object-fit: cover;
-    
-    
+    height: 114px;                      /*  HAUTEUR */
+    object-fit: cover;   
     border-top-left-radius: 10px;               /* BORDER RADIUS */
     border-top-right-radius: 10px;              /* BORDER RADIUS */
 }
 
 .roundedPixBottom
 {   
-    width: 100%;                      /* HAUTEUR */
-    height: 114px;
+    width: 100%;                            /* LARGEUR */
+    height: 114px;                          /* HAUTEUR */
     object-fit: cover;
     
 
@@ -342,20 +337,6 @@ button
     border-top-right-radius: 10px;              /* BORDER RADIUS */
 }
 
-/* 
-.photoGaucheTop
-{
-    height: 57%;
-    width: 100%;
-    
-}
-
-.photoGaucheBottom
-{
-    height: 57%;
-    width: 100%;
-}
-*/
 .descripPhoto 
 {
     height: 43%;
@@ -365,18 +346,15 @@ button
 .bulleTitreText
 {
     margin-left: 3%;
-    font-weight: bold;
-    
+    font-weight: bold;  
     position: relative;                       
     bottom: 10%;
-    }
+}
 
 .bulleText
 {
-    
     position: relative;                 
-    bottom: 19%;
-    
+    bottom: 19%;   
     margin-left: 3%;
 }
 
@@ -389,7 +367,6 @@ button
 {
     position: relative;                 
     bottom: 30%;
- 
     margin-left: 3%;
 }
 
@@ -447,12 +424,9 @@ button
     border-radius: 10px;                    /* BORDER RADIUS */
     height: 21%;                            /* HAUTEUR */
     width: 82%;                             /* LARGEUR */
-    background-color: #ffffff;  
-    
-    
+    background-color: #ffffff;    
     position: relative;                     
     bottom: 6%;
-    
 }
 
 .leftRoundPix
@@ -463,13 +437,7 @@ button
     height: 100%;
     object-fit: cover;
 }
-/*
-.photoDroit
-{
-    width: 45%;                             
-    height: 100%;                           
-}
-*/
+
 .descriptionPhoto
 {
     margin-left: 1%;
@@ -482,10 +450,6 @@ button
 {
     font-weight: bold;
     height: 10%;                            /* HAUTEUR */
-    /*
-    position: relative;                    
-    bottom: 9%;
-    */
     margin-left: 8%;
     margin-bottom: 2em;
 }
@@ -498,26 +462,18 @@ button
 .textPhoto
 {
     height: 10%;                            /* HAUTEUR */
-    /*
-    position: relative;                     
-    top: 4%;
-    */
     margin-left: 8%;
     margin-bottom: 2.5em;
 }
 
 .ratingsDroit
-{
-    /*
-    position: relative;                    
-    top: 30%;
-    */  
+{ 
     margin-left: 8%;
 }
 
 .starPixDroit
 {
-    width: 0.4em;                              /* LARGEUR */
+    width: 0.4em;                           /* LARGEUR */
     height: 100%;                           /* HAUTEUR */
     color: #0065fc;
     margin-right: 0.5em;
@@ -530,10 +486,10 @@ button
     margin-right: 0.5em;
 }
 
+/* MEDIA QUERIES POUR PERMETTRE LES FORMATS TABLETTES */
 
 @media screen and (min-width: 1200px) and (max-width: 1300px)
 {
-    
     .descripPhoto 
     {
         font-size: 0.8em;
