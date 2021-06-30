@@ -349,6 +349,11 @@ button[class="boutonBlock"]:hover
     margin-left: 8%;
 }
 
+.titreHdeux
+{
+    font-size: 1.5em;
+}
+
 #blocGaucheTop
 {
     display: flex;

@@ -300,6 +300,11 @@ button[class="boutonBlock"]:hover
     left: 1%;
 }
 
+.titreHdeux
+{
+    font-size: 1.5em;
+}
+
 #blocGaucheTop                              
 {
     height: 31%;                            /* HAUTEUR */
