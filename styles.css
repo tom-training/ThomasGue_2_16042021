@@ -38,6 +38,17 @@ header
     align-items: center;
 }
 
+a[href="#titreHebergementMarseille"], a[href="#titreMilieu"]
+{
+    text-decoration: none;
+    color: black;
+} 
+
+a[href="#titreHebergementMarseille"]:hover, a[href="#titreMilieu"]:hover
+{
+    color: #3081fd;
+}
+
 .lienMenu:hover
 {
     color: #3081fd;
@@ -74,6 +85,11 @@ input[type="submit"], input[type="search"]
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+form[id="formVille"]:hover 
+{
+    font-style: italic;
 }
 
 /* CSS de la grosse bulle icone/zone de texte/bouton submit */
@@ -196,6 +212,12 @@ button
 	background: none;
 	border: none;
 	font: inherit;	
+}
+
+button[class="boutonBlock"]:hover
+{
+    background-color: #0065fc;
+    color: white;
 }
 
 .boutonBlock
