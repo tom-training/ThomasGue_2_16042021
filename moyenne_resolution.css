@@ -605,3 +605,15 @@ footer a:hover
 {
     font-style: italic;
 }
+
+footer ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li
+{
+    margin-bottom: 1em;
+}
