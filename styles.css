@@ -19,7 +19,6 @@ a:visited
     color:#551A8B
 }
 
-
 /* flexbox et CSS de la zone d'entête */
 
 /* Le header va dispatcher le logo Reservia à gauche et hébergement/Activités et le bouton s'inscrire sur la droite */
@@ -372,7 +371,6 @@ button[class="boutonBlock"]:hover
     height: 114px;                          /* HAUTEUR */
     object-fit: cover;
     
-
     border-top-left-radius: 10px;               /* BORDER RADIUS */
     border-top-right-radius: 10px;              /* BORDER RADIUS */
 }
