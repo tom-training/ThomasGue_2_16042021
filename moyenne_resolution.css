@@ -109,6 +109,18 @@ a[href="#titreHebergementMarseille"]:hover, a[href="#titreMilieu"]:hover
     color: #3081fd;
 }
 
+button 
+{
+	background: none;
+	border: none;
+	font: inherit;	
+}
+
+header button:hover
+{
+    font-weight: bold;
+}
+
 /* FIN DU HEADER */
 
 /* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
@@ -228,115 +240,31 @@ form[id="formVille"]:hover
 
 /* CSS de la ligne de filtes : Eco, Famil., Romantiq., Animaux */
 
-#filtre
+
+ul.mesFiltres
 {
-    display: flex;                          /* FLEXBOX */
-    flex-wrap: wrap;
-    font-weight: bold;
-}
-
-/* CSS du texte Filtres: */
-#filtresText
-{
-    display: flex;                          /* FLEXBOX */
-    align-items: center; 
-    width: 100%;
-    font-size: 1.2em;
-}
-
-/* CSS des bulles de filtres (icone+text) Eco, fam., Romantiq., Animaux */
-
-.filtreBulle
-{  
-    display: flex;
-    margin-bottom: 1em;
-}
-
-.iconBlock
-{
-    background-color: #deebff;
-    border-style: solid;
-    border-color: #deebff;
-    height: 2em;
-    width: 2em;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+    list-style-type: none;
 }
 
 .iconPix
 {
-    width: 1em;
     color: #0065fc;
+    background: #deebff;
+    padding:7px;
+    border-radius: 50%;
 }
 
-/* propriétés générales CSS des icones des bulles de filtres Eco, fam., Romantiq., Animaux */
-
-button 
+.pourInfoPix
 {
-	background: none;
-	border: none;
-	font: inherit;
-	
-}
-
-button[class="boutonBlock"]:hover
-{
-    background-color: #0065fc;
-    color: white;
-}
-
-.boutonBlock
-{
-    border-color: #d9d9d9;
-    border-style: solid;
-    border-width: 1px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding-left: 1.4em;
-    padding-right: 0.5em;
-    position: relative;
-    right: 1em;
-    z-index: 1;
-}
-
-/* CSS de la ligne pour Info */
-
-/* prop. Flexbox de cette ligne: icone i + texte pour info */
-
-#pourInfo
-{
-    display: flex;
-    align-items: baseline;    
-}
-
-#iPourInfo
-{
-    height: 1.5em;
-    width: 1.5em;
-    border-style: solid;
-    border-width: thin;
-    border-color: #dedede;
-    border-radius: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0.5em;   
-    position: relative;
-    top: 0.1em;
-}
-
-#textPourInfo
-{
-    font-size: 1em;
-}
-
-#pourInfoPix
-{
-    width: 0.2em;
+    border: 2px solid #dedede;
+    border-radius: 50%;
+    padding: 6px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    margin-right: 1%;
     color: #0065fc;
+
 }
 
 
