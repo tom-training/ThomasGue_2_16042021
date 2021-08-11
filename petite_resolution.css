@@ -5,8 +5,22 @@
 *
 {
     font-family: Raleway, Courier, monospace, Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body
+{
+    width: 100%;
+    min-height: 100vh;
+}
+
+main
+{
+    width: 100%;
+    min-height: 100%;
+}
 
 a:link
 { 
@@ -29,14 +43,20 @@ header
 {
     display: flex;                          /* FLEXBOX */
     flex-wrap: wrap;
+    width: 100%;
+}
+
+header > div
+{
+    min-width: 50%;
 }
 
 .element:nth-child(1)                       /* LE LOGO RESERVIA est prioritaire 1 sur la gauche */
 {
     order: 1;
-    width: 48%;                             /* LARGEUR */
     display: flex;                          /* FLEXBOX */
     justify-content: flex-start;
+    padding: 1em;
 }
 
 #reserviaLogo
@@ -47,19 +67,15 @@ header
 .element:nth-child(2)                       /* la rubrique Hebergements en prioritaire 3 en bas/gauche */
 {
     order: 3;
-    width: 48%;
     margin-top: 1em;
     display: flex;                          /* FLEXBOX */
-    justify-content: center;
-    position: relative;                     /* POSITION RELATIVE */
-    left: 5%;    
+    justify-content: center; 
 }
 
 
 .element:nth-child(3)                       /* la rubrique Activites en prioritaire 4 en bas/droite */
 {
     order: 4;
-    width: 48%;
     margin-top: 1em;
     display: flex;                           /* FLEXBOX */
     justify-content: center;
@@ -68,9 +84,9 @@ header
 .element:nth-child(4)                       /* la rubrique S'inscrire en prioritaire 2 en haut/droite */
 {
     order: 2;
-    width: 48%;
     display: flex;                          /* FLEXBOX */
     justify-content: flex-end;
+    padding: 1.5em;
 }
 
 .lienMenu                                   /* propriétés des liens Hébergements et Activités */
@@ -104,23 +120,30 @@ a[href="#titreHebergementMarseille"]:hover, a[href="#titreMilieu"]:hover
     color: #3081fd;
 }
 
+header button:hover
+{
+    font-weight: bold;
+}
+
 /* FIN DU HEADER */
 
 /* CSS et flexbox de la zone section Filtre de Trouver votre h....  à  Plus de 500 logements dispo...*/
 
 #sectionFiltre
 {
-    margin-left: 1.5%;  
+    padding: 1em;
 }
 
 #titreFiltre
 {
     font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
 #slogan
 {
     font-size: 1em;
+    margin-bottom: 1.5em;
 }
 
 /* CSS de la zone de texte: recherche ville et bouton submit associé  */
@@ -146,8 +169,7 @@ form[id="formVille"]:hover
 {
     display: flex;
     align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-bottom: 1.5em;
     width: 90%;                        /* LARGEUR */
     height: 2.5em;                      /* HAUTEUR */
     border-radius: 10px;                /* BORDER RADIUS */
@@ -237,6 +259,7 @@ form[id="formVille"]:hover
     align-items: center; 
     width: 100%;
     font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
 /* CSS des bulles de filtres (icone+text) Eco, fam., Romantiq., Animaux */
@@ -245,6 +268,7 @@ form[id="formVille"]:hover
 {  
     display: flex;
     margin-bottom: 1em;
+    margin-right: 1.5em;
 }
 
 .iconBlock
@@ -263,7 +287,7 @@ form[id="formVille"]:hover
 
 .iconPix
 {
-    width: 1em;
+    width: 40%;
     color: #0065fc;
 }
 
@@ -289,10 +313,8 @@ button[class="boutonBlock"]:hover
     border-width: 1px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    padding-left: 1.4em;
-    padding-right: 0.5em;
     position: relative;
-    right: 1em;
+    right: 1em; 
     z-index: 1;
 }
 
@@ -309,7 +331,7 @@ button[class="boutonBlock"]:hover
 #iPourInfo
 {
     height: 2em;
-    width: 2em;
+    width: 2em; 
     border-style: solid;
     border-width: thin;
     border-color: #dedede;
@@ -317,17 +339,17 @@ button[class="boutonBlock"]:hover
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0.5em; 
 }
 
 #textPourInfo
 {
     font-size: 1em;
+    margin-left: 0.5em;
 }
 
 #pourInfoPix
 {
-    width: 0.5em;
+    width: 40%;
     color: #0065fc;
 }
 
@@ -340,17 +362,22 @@ button[class="boutonBlock"]:hover
 #sectionSuperieure
 {
     display: flex;
-    flex-direction: column-reverse;   
+    flex-direction: column-reverse; 
+    padding-top: 1em;  
+    padding-bottom: 1em;
 }
 
 #blocGauche
 {
-    width: 100%;    
+    width: 100%;   
+    padding-top: 1.5em; 
 }
 
 #titreHebergementMarseille
 {
-    margin-left: 1%;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .titreHdeux
@@ -387,7 +414,7 @@ button[class="boutonBlock"]:hover
 
 .descripPhoto
 {
-    height: 3.5em;
+    height: 4em;
     font-size: 0.8em;
 }
 
@@ -427,24 +454,20 @@ button[class="boutonBlock"]:hover
 .bulleTitreText
 {
     font-weight: bold;
-    margin-left: 5%; 
-    position: relative;
-    bottom: 0.6em;
+    margin-left: 5%;
+    margin-bottom: 1%; 
 }
 
 .bulleText
 {
     margin-left: 5%;
-    position: relative;
-    bottom: 1.4em;
+    margin-bottom: 1%;
 }
 
 .ratings
 {
     margin-left: 5%;
-    margin-bottom: 2%;
-    position: relative;
-    bottom: 2.2em;
+    margin-bottom: 1%;
 }
 
 /* CSS de la zone au top de la sectionSuperieure sur la version mobile */
@@ -457,6 +480,7 @@ button[class="boutonBlock"]:hover
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 1.5em;
 }
 
 #titrePlusIcon
@@ -465,6 +489,7 @@ button[class="boutonBlock"]:hover
     width: 80%; 
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 1.5em;
 }
 
 #iconGraph
@@ -549,6 +574,7 @@ button[class="boutonBlock"]:hover
     display: flex;
     flex-direction: column;
     font-weight: bold;
+    padding-top: 1em;
 }
 
 .blocActivite
@@ -584,6 +610,8 @@ button[class="boutonBlock"]:hover
     display: flex;
     align-items: center;
     padding-left: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
 /* FIN FIN FIN FIN de la section inférieure   FIN FIN FIN FIN */
@@ -596,6 +624,7 @@ footer
     display: flex;
     flex-direction: column;
     padding-left: 8%;
+    padding-top: 1em;
 }
 
 footer a:hover
@@ -607,10 +636,15 @@ footer ul
 {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 1em;
 }
 
 footer li
 {
     margin-bottom: 1em;
+}
+
+.articleFooter
+{
+    padding-top: 2em;
 }
