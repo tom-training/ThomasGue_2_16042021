@@ -232,6 +232,12 @@ ul.mesFiltres li
     z-index: 1;
 }
 
+.amande:hover
+{
+    color: white;
+    background-color: #0065fc;
+}
+
 .cartoucheLongue
 {
     width: 35%;

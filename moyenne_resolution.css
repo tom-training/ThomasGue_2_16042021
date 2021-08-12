@@ -165,7 +165,7 @@ form[id="formVille"]:hover
     align-items: center;
     margin-left: 2%;
     margin-right: 2%;
-    width: 90%;                        /* LARGEUR */
+    width: 50%;                        /* LARGEUR */
     height: 2.5em;                      /* HAUTEUR */
     border-radius: 10px;                /* BORDER RADIUS */
 }
@@ -240,19 +240,72 @@ form[id="formVille"]:hover
 
 /* CSS de la ligne de filtes : Eco, Famil., Romantiq., Animaux */
 
+#filtreRecherche
+{
+    display: flex;
+    align-items: center;  
+    width: 100%;
+}
 
 ul.mesFiltres
 {
     list-style-type: none;
+    display: flex;
+    width: 90%;
 }
 
 .iconPix
 {
     color: #0065fc;
+    border: 1.5px solid #deebff;
     background: #deebff;
-    padding:7px;
-    border-radius: 50%;
+    border-radius: 50px;
+    padding: 15px;
+    text-align: center;
+    margin-right: 4%;
+    position: relative;
+    right: 2px;
+    z-index: 2;
 }
+
+
+ul.mesFiltres li
+{
+    float: left;
+}
+
+
+.amande
+{
+    border: 1.5px solid #d9d9d9;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.amande:hover
+{
+    color: white;
+    background-color: #0065fc;
+}
+
+.cartoucheLongue
+{
+    width: 220px;
+}
+
+.cartoucheMoyenne
+{
+    width: 220px;
+}
+
+.cartouchePetite
+{
+    width: 160px;
+}    
 
 .pourInfoPix
 {
@@ -264,7 +317,6 @@ ul.mesFiltres
     text-align: center;
     margin-right: 1%;
     color: #0065fc;
-
 }
 
 

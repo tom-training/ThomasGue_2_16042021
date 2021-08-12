@@ -302,6 +302,12 @@ ul.mesFiltres li
     z-index: 1;
 }
 
+.amande:hover
+{
+    color: white;
+    background-color: #0065fc;
+}
+
 #eco
 {
     width: 155px;
@@ -314,18 +320,19 @@ ul.mesFiltres li
 
 #roman
 {
-    width: 150px;
+    width: 160px;
 }    
 
 #ani
 {
-    width: 200px;
+    width: 210px;
 }
 
 #pourInfo
 {
     margin-top: 5%;
     font-size: 0.8em;
+    display: flex;
 }
 
 
@@ -334,11 +341,17 @@ ul.mesFiltres li
     border: 2px solid #dedede;
     border-radius: 50px;
     padding: 6px;
-    width: 27px;
+    width: 30px;
     text-align: center;
-    margin-right: 1%;
     color: #0065fc;
     font-size: 10px;
+}
+
+.phraseInfo
+{
+    position: relative;
+    top: 5px;
+    margin-left: 2%;
 }
 
 
