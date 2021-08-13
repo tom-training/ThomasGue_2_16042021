@@ -159,12 +159,19 @@ form[id="formVille"]:hover
 
 /* CSS de la grosse bulle icone/zone de texte/bouton submit */
 
+#slogan
+{
+    font-size: 1em;
+    font-weight: normal;
+}
+
 #rechercheVille
 {
     display: flex;
     align-items: center;
     margin-left: 2%;
     margin-right: 2%;
+    margin-top: 1em;
     width: 50%;                        /* LARGEUR */
     height: 2.5em;                      /* HAUTEUR */
     border-radius: 10px;                /* BORDER RADIUS */
@@ -252,6 +259,7 @@ ul.mesFiltres
     list-style-type: none;
     display: flex;
     width: 90%;
+    margin-top: 1em;
 }
 
 .iconPix
@@ -329,6 +337,11 @@ ul.mesFiltres li
 {
     display: flex;
     flex-direction: column-reverse;   
+}
+
+.transparent
+{
+    display: none;
 }
 
 #blocGauche

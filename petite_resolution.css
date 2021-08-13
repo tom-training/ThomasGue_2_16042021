@@ -172,11 +172,18 @@ form[id="formVille"]:hover
 
 /* CSS de la grosse bulle icone/zone de texte/bouton submit */
 
+#slogan
+{
+    font-size: 1em;
+    font-weight: normal;
+}
+
 #rechercheVille
 {
     display: flex;
     align-items: center;
     margin-bottom: 1.5em;
+    margin-top: 1em;
     width: 90%;                        /* LARGEUR */
     height: 2.5em;                      /* HAUTEUR */
     border-radius: 10px;                /* BORDER RADIUS */
@@ -257,9 +264,10 @@ form[id="formVille"]:hover
     width: 100%;
 }
 
-article#filtreRecherche h1
+article#filtreRecherche h2
 {
     margin-bottom: 5%;
+    font-size: 1em;
 }
 
 ul.mesFiltres
@@ -268,12 +276,13 @@ ul.mesFiltres
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 1em;
 }
 
 .iconPix
 {
     color: #0065fc;
-    background: #deebff;
+    background-color: #deebff;
     border-radius: 50px;
     padding: 10px;
     text-align: center;
@@ -366,6 +375,11 @@ ul.mesFiltres li
     padding-bottom: 1em;
 }
 
+.transparent
+{
+    display: none;
+}
+
 #blocGauche
 {
     width: 100%;   
@@ -402,9 +416,8 @@ ul.mesFiltres li
 
 .bullePhoto
 {
-    border-style: solid;
+    border-style: none;
     border-radius: 10px;
-    border-color:#ffffff; 
     background-color:#ffffff;
     box-shadow: 0px 3px 0px #f3f3f3;
     margin-bottom: 10%;
@@ -499,8 +512,7 @@ ul.mesFiltres li
 .bullePicture
 {
     display: flex;
-    border-style: solid;
-    border-color: #ffffff;
+    border-style: none;
     border-radius: 10px;
     margin-bottom: 9%;
     background-color: #ffffff;
